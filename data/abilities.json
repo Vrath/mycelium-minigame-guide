@@ -1,0 +1,75 @@
+[
+  {
+    "id": "ambush",
+    "name": "Ambush",
+    "description": "Deals double damage on the first attack.",
+    "params": {}
+  },
+  {
+    "id": "double_strike",
+    "name": "Double Strike",
+    "description": "Attacks twice per turn.",
+    "params": {}
+  },
+  {
+    "id": "enrage",
+    "name": "Enrage",
+    "description": "Gains attack each time you take damage.",
+    "params": {
+      "attackGain": 3
+    }
+  },
+  {
+    "id": "ethereal_barrier",
+    "name": "Ethereal Barrier",
+    "description": "The first hit taken is fully negated.",
+    "params": {}
+  },
+  {
+    "id": "fiery",
+    "name": "Fiery",
+    "description": "Gains attack each turn end but loses HP.",
+    "params": {
+      "attackGain": 2,
+      "hpCost": 2
+    }
+  },
+  {
+    "id": "heroic",
+    "name": "Heroic",
+    "description": "Gains attack equal to damage dealt (after armor).",
+    "params": {}
+  },
+  {
+    "id": "regeneration",
+    "name": "Regeneration",
+    "description": "Heals HP at the end of each turn survived.",
+    "params": {
+      "healPerTurn": 3
+    }
+  },
+  {
+    "id": "thorn",
+    "name": "Thorn",
+    "description": "Reflects damage on each hit taken.",
+    "params": {
+      "reflect": 2
+    }
+  },
+  {
+    "id": "vampirism",
+    "name": "Vampirism",
+    "description": "Heals a fraction of damage dealt (after armor).",
+    "params": {
+      "healFraction": 0.5
+    }
+  },
+  {
+    "id": "void",
+    "name": "Void",
+    "description": "Ignores some of the defender's armor.",
+    "params": {
+      "ignoreArmor": 2
+    }
+  }
+]

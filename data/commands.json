@@ -1,0 +1,50 @@
+[
+  {
+    "name": "game",
+    "section": "Progression",
+    "description": "Core minigame commands for inventory, shop, stats, boxes, and achievements.",
+    "usage": "/game <inventory|equip|unequip|shop|buy|sell|stats|leaderboard|boxes|open|achievements|optout>",
+    "details": "Use `/game inventory` to inspect your loadout, `/game shop` to browse the current stock, and `/game stats` or `/game leaderboard` to track progress.",
+    "kind": "slash"
+  },
+  {
+    "name": "claim",
+    "section": "Wellsprings",
+    "description": "Claim an unclaimed wellspring.",
+    "usage": "/claim <location>",
+    "details": "Use this on an unclaimed wellspring. Some wellsprings are guarded and require defeating a guardian before ownership transfers.",
+    "kind": "slash"
+  },
+  {
+    "name": "challenge",
+    "section": "Wellsprings",
+    "description": "Challenge the current holder of a wellspring.",
+    "usage": "/challenge <location>",
+    "details": "Challenge a claimed wellspring to take control. Wins grant spores, losses still grant a small consolation reward, and challenge cooldowns apply.",
+    "kind": "slash"
+  },
+  {
+    "name": "wellsprings",
+    "section": "Wellsprings",
+    "description": "List all currently active wellsprings.",
+    "usage": "/wellsprings",
+    "details": "Shows active locations, ownership state, rarity, expiry, and the next action to take at each wellspring.",
+    "kind": "slash"
+  },
+  {
+    "name": "daily",
+    "section": "Progression",
+    "description": "Claim your daily spore bonus.",
+    "usage": "/daily",
+    "details": "Claim a flat daily spore payout once per day to keep your economy moving even when you are not fighting.",
+    "kind": "slash"
+  },
+  {
+    "name": "arena",
+    "section": "Arena",
+    "description": "Arena PvP queue, profile, and leaderboard commands.",
+    "usage": "/arena <ranked|practice|leave|status|leaderboard|profile>",
+    "details": "Join ranked or practice Arena queues, inspect your queue state, and view Arena profiles or the ladder.",
+    "kind": "slash"
+  }
+]

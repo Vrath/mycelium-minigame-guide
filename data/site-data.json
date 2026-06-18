@@ -1,0 +1,652 @@
+{
+  "generatedAt": "2026-06-18T14:31:55.394Z",
+  "items": [
+    {
+      "id": "ambush_blade",
+      "name": "Ambush Blade",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 1500,
+      "stats": {
+        "attack": 4
+      },
+      "ability": {
+        "id": "ambush",
+        "name": "ambush"
+      },
+      "description": "+4 attack. Ambush: deal double damage on your first attack."
+    },
+    {
+      "id": "ancient_sword",
+      "name": "Ancient Sword",
+      "slot": "weapon",
+      "rarity": "epic",
+      "price": 5000,
+      "stats": {
+        "attack": -9
+      },
+      "ability": {
+        "id": "heroic",
+        "name": "heroic"
+      },
+      "description": "−9 attack. Heroic: after each attack, gain attack equal to damage dealt."
+    },
+    {
+      "id": "barbarian_suit",
+      "name": "Barbarian Suit",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "armor": 1
+      },
+      "ability": null,
+      "description": "+2 attack, +1 armor."
+    },
+    {
+      "id": "bloodrush_beads",
+      "name": "Bloodrush Beads",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "hp": -5
+      },
+      "ability": null,
+      "description": "+2 attack, -5 HP."
+    },
+    {
+      "id": "bloom_salve",
+      "name": "Bloom Salve",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 120,
+      "stats": {
+        "hp": 2
+      },
+      "ability": {
+        "id": "regeneration",
+        "name": "regeneration",
+        "healPerTurn": 3
+      },
+      "description": "+2 HP. Regeneration: heal 3 HP after each turn survived."
+    },
+    {
+      "id": "darkthorn_shield",
+      "name": "Darkthorn Shield",
+      "slot": "armor",
+      "rarity": "rare",
+      "price": 1500,
+      "stats": {
+        "armor": 4,
+        "hp": -10
+      },
+      "ability": {
+        "id": "thorn",
+        "name": "thorn",
+        "reflect": 2
+      },
+      "description": "+4 armor, -10 HP. Thorn: Reflects 2 damage on each hit taken."
+    },
+    {
+      "id": "ethereal_ring",
+      "name": "Ethereal Ring",
+      "slot": "accessory",
+      "rarity": "epic",
+      "price": 5000,
+      "stats": {
+        "attack": 3
+      },
+      "ability": {
+        "id": "ethereal_barrier",
+        "name": "ethereal_barrier"
+      },
+      "description": "+3 attack. Ethereal Barrier: the first hit you take is fully negated."
+    },
+    {
+      "id": "fiery_armor",
+      "name": "Fiery Armor",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "armor": 4,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+4 armor. Lose 2 HP every turn."
+    },
+    {
+      "id": "fiery_concoction",
+      "name": "Fiery Concoction",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 1400,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "fiery",
+        "name": "fiery",
+        "attackGain": 2,
+        "hpCost": 2
+      },
+      "description": "+5 HP. Fiery: each turn end, gain +2 attack but lose 2 HP."
+    },
+    {
+      "id": "fiery_longsword",
+      "name": "Fiery Longsword",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 500,
+      "stats": {
+        "attack": 6,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+6 attack. Lose 2 HP each turn."
+    },
+    {
+      "id": "fiery_ring",
+      "name": "Fiery Ring",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "attack": 4,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+4 attack. Lose 2 HP every turn."
+    },
+    {
+      "id": "hazeveil_wrap",
+      "name": "Hazeveil Wrap",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 8
+      },
+      "ability": null,
+      "description": "+8 HP."
+    },
+    {
+      "id": "iron_buckler",
+      "name": "Iron Buckler",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "armor": 3
+      },
+      "ability": null,
+      "description": "+3 armor."
+    },
+    {
+      "id": "leather_armor",
+      "name": "Leather Armor",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "armor": 2,
+        "hp": 5
+      },
+      "ability": null,
+      "description": "+2 armor, +5 HP."
+    },
+    {
+      "id": "leeching_lens",
+      "name": "Leeching Lens",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "vampirism",
+        "name": "vampirism",
+        "healFraction": 0.25
+      },
+      "description": "+5 HP. Vampirism 25: heal 25% of damage dealt."
+    },
+    {
+      "id": "mossbound_cudgel",
+      "name": "Mossbound Cudgel",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 1,
+        "armor": 1
+      },
+      "ability": null,
+      "description": "+1 attack, +1 armor."
+    },
+    {
+      "id": "mycelial_plate",
+      "name": "Mycelial Plate",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "armor": 3
+      },
+      "ability": {
+        "id": "thorn",
+        "name": "thorn",
+        "reflect": 2
+      },
+      "description": "+3 armor. Thorn 2: reflects 2 damage on each hit taken."
+    },
+    {
+      "id": "needleglass_shiv",
+      "name": "Needleglass Shiv",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2
+      },
+      "ability": {
+        "id": "void",
+        "name": "void",
+        "ignoreArmor": 3
+      },
+      "description": "+2 attack. Pierce 3: ignores 3 armor."
+    },
+    {
+      "id": "orc_shield",
+      "name": "Orc Shield",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 450,
+      "stats": {
+        "hp": -10,
+        "armor": 1
+      },
+      "ability": {
+        "id": "enrage",
+        "name": "enrage",
+        "attackGain": 3
+      },
+      "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage."
+    },
+    {
+      "id": "potion_anger",
+      "name": "Potion of Anger",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2
+      },
+      "ability": null,
+      "description": "+2 attack."
+    },
+    {
+      "id": "quarterstaff",
+      "name": "Quarterstaff",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "armor": 1
+      },
+      "ability": null,
+      "description": "+2 attack, +1 armor."
+    },
+    {
+      "id": "redline_hatchet",
+      "name": "Redline Hatchet",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 5,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+5 attack. Drain 2: lose 2 HP each turn."
+    },
+    {
+      "id": "sharpened_claw",
+      "name": "Sharpened Claw",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 3
+      },
+      "ability": null,
+      "description": "+3 attack."
+    },
+    {
+      "id": "silken_cloth",
+      "name": "Silken Cloth",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 10
+      },
+      "ability": null,
+      "description": "+10 HP."
+    },
+    {
+      "id": "sporeguard_charm",
+      "name": "Sporeguard Charm",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 10
+      },
+      "ability": null,
+      "description": "+10 HP."
+    },
+    {
+      "id": "potion_stoneskin",
+      "name": "Stoneskin Potion",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "attack": -2,
+        "armor": 4
+      },
+      "ability": null,
+      "description": "-2 attack, +4 armor."
+    },
+    {
+      "id": "thornstalk_ring",
+      "name": "Thornstalk Ring",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 500,
+      "stats": {
+        "attack": 2
+      },
+      "ability": {
+        "id": "thorn",
+        "name": "thorn",
+        "reflect": 2
+      },
+      "description": "+2 attack. Thorn: Reflects 2 damage on each hit taken."
+    },
+    {
+      "id": "thornweave_cloak",
+      "name": "Thornweave Cloak",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 500,
+      "stats": {
+        "armor": 2
+      },
+      "ability": {
+        "id": "thorn",
+        "name": "thorn",
+        "reflect": 2
+      },
+      "description": "+2 armor. Thorn: reflects 2 damage on each hit taken."
+    },
+    {
+      "id": "travelers_charm",
+      "name": "Traveler's Charm",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 10
+      },
+      "ability": null,
+      "description": "+10 HP."
+    },
+    {
+      "id": "turtle_shell",
+      "name": "Turtle Shell",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "armor": 2
+      },
+      "ability": null,
+      "description": "+2 armor."
+    },
+    {
+      "id": "twin_knives",
+      "name": "Twin Knives",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 1600,
+      "stats": {
+        "attack": -4
+      },
+      "ability": {
+        "id": "double_strike",
+        "name": "double_strike"
+      },
+      "description": "−4 attack. Double Strike: attack twice per turn."
+    },
+    {
+      "id": "vampiric_dagger",
+      "name": "Vampiric Dagger",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 450,
+      "stats": {
+        "attack": 2
+      },
+      "ability": {
+        "id": "vampirism",
+        "name": "vampirism",
+        "healFraction": 0.5
+      },
+      "description": "+2 attack. Vampirism: heal 50% of damage dealt (after armor)."
+    },
+    {
+      "id": "void_fang",
+      "name": "Void Fang",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 500,
+      "stats": {
+        "attack": 4,
+        "hp": -5
+      },
+      "ability": {
+        "id": "void",
+        "name": "void",
+        "ignoreArmor": 2
+      },
+      "description": "+4 attack. Void: ignores 2 of defender's armor."
+    },
+    {
+      "id": "void_ring",
+      "name": "Void Ring",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "attack": 2,
+        "hp": -5
+      },
+      "ability": {
+        "id": "void",
+        "name": "void",
+        "ignoreArmor": 2
+      },
+      "description": "+2 attack, -5 HP. Void: Ignore 2 points of armor."
+    },
+    {
+      "id": "warhide_vest",
+      "name": "Warhide Vest",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "hp": -5
+      },
+      "ability": null,
+      "description": "+2 attack, -5 HP."
+    },
+    {
+      "id": "warped_blade",
+      "name": "Warped Blade",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "attack": 8,
+        "hp": -10
+      },
+      "ability": null,
+      "description": "+8 attack, -10 HP."
+    },
+    {
+      "id": "wooden_club",
+      "name": "Wooden Club",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "hp": 5
+      },
+      "ability": null,
+      "description": "+2 attack, +5 HP."
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ambush",
+      "name": "Ambush",
+      "description": "Deals double damage on the first attack.",
+      "params": {}
+    },
+    {
+      "id": "double_strike",
+      "name": "Double Strike",
+      "description": "Attacks twice per turn.",
+      "params": {}
+    },
+    {
+      "id": "enrage",
+      "name": "Enrage",
+      "description": "Gains attack each time you take damage.",
+      "params": {
+        "attackGain": 3
+      }
+    },
+    {
+      "id": "ethereal_barrier",
+      "name": "Ethereal Barrier",
+      "description": "The first hit taken is fully negated.",
+      "params": {}
+    },
+    {
+      "id": "fiery",
+      "name": "Fiery",
+      "description": "Gains attack each turn end but loses HP.",
+      "params": {
+        "attackGain": 2,
+        "hpCost": 2
+      }
+    },
+    {
+      "id": "heroic",
+      "name": "Heroic",
+      "description": "Gains attack equal to damage dealt (after armor).",
+      "params": {}
+    },
+    {
+      "id": "regeneration",
+      "name": "Regeneration",
+      "description": "Heals HP at the end of each turn survived.",
+      "params": {
+        "healPerTurn": 3
+      }
+    },
+    {
+      "id": "thorn",
+      "name": "Thorn",
+      "description": "Reflects damage on each hit taken.",
+      "params": {
+        "reflect": 2
+      }
+    },
+    {
+      "id": "vampirism",
+      "name": "Vampirism",
+      "description": "Heals a fraction of damage dealt (after armor).",
+      "params": {
+        "healFraction": 0.5
+      }
+    },
+    {
+      "id": "void",
+      "name": "Void",
+      "description": "Ignores some of the defender's armor.",
+      "params": {
+        "ignoreArmor": 2
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "game",
+      "section": "Progression",
+      "description": "Core minigame commands for inventory, shop, stats, boxes, and achievements.",
+      "usage": "/game <inventory|equip|unequip|shop|buy|sell|stats|leaderboard|boxes|open|achievements|optout>",
+      "details": "Use `/game inventory` to inspect your loadout, `/game shop` to browse the current stock, and `/game stats` or `/game leaderboard` to track progress.",
+      "kind": "slash"
+    },
+    {
+      "name": "claim",
+      "section": "Wellsprings",
+      "description": "Claim an unclaimed wellspring.",
+      "usage": "/claim <location>",
+      "details": "Use this on an unclaimed wellspring. Some wellsprings are guarded and require defeating a guardian before ownership transfers.",
+      "kind": "slash"
+    },
+    {
+      "name": "challenge",
+      "section": "Wellsprings",
+      "description": "Challenge the current holder of a wellspring.",
+      "usage": "/challenge <location>",
+      "details": "Challenge a claimed wellspring to take control. Wins grant spores, losses still grant a small consolation reward, and challenge cooldowns apply.",
+      "kind": "slash"
+    },
+    {
+      "name": "wellsprings",
+      "section": "Wellsprings",
+      "description": "List all currently active wellsprings.",
+      "usage": "/wellsprings",
+      "details": "Shows active locations, ownership state, rarity, expiry, and the next action to take at each wellspring.",
+      "kind": "slash"
+    },
+    {
+      "name": "daily",
+      "section": "Progression",
+      "description": "Claim your daily spore bonus.",
+      "usage": "/daily",
+      "details": "Claim a flat daily spore payout once per day to keep your economy moving even when you are not fighting.",
+      "kind": "slash"
+    },
+    {
+      "name": "arena",
+      "section": "Arena",
+      "description": "Arena PvP queue, profile, and leaderboard commands.",
+      "usage": "/arena <ranked|practice|leave|status|leaderboard|profile>",
+      "details": "Join ranked or practice Arena queues, inspect your queue state, and view Arena profiles or the ladder.",
+      "kind": "slash"
+    }
+  ]
+}

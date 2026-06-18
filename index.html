@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psychill Space Minigame Guide</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Read-only companion</p>
+        <h1>Minigame Codex</h1>
+        <p class="hero-copy">A field manual for spores, wellsprings, and arena builds. The command guide and item codex are generated from the same repository data that powers the minigame, so balance and content changes stay in sync.</p>
+        <div id="status-panel" class="status-panel">Loading codex data...</div>
+        <nav>
+          <a href="#field-guide">Field Guide</a>
+          <a href="#commands">Command Guide</a>
+          <a href="#items">Item Codex</a>
+        </nav>
+      </header>
+
+      <section id="field-guide" class="intro-grid">
+        <article class="card prose">
+          <p class="section-label">Field Guide</p>
+          <h2>First steps</h2>
+          <p>Pick a starter kit, claim your daily spores, then start buying around your planned build instead of treating every item as a flat stat stick.</p>
+        </article>
+        <article class="card prose">
+          <p class="section-label">Wellsprings</p>
+          <h2>Control the map</h2>
+          <p>Use open wellsprings for passive value and claimed wellsprings as pressure points. Guardian fights and cooldowns mean timing matters as much as raw gear.</p>
+        </article>
+        <article class="card prose">
+          <p class="section-label">Arena</p>
+          <h2>Test builds safely</h2>
+          <p>Arena queues are the cleanest place to test whether a loadout really works before you commit it to contested wellsprings.</p>
+        </article>
+      </section>
+
+      <section id="commands">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Operations</p>
+            <h2>Command Guide</h2>
+          </div>
+          <p class="meta">Grouped by the way you actually play: progression, map control, and PvP.</p>
+        </div>
+        <div id="commands-grid" class="command-groups"></div>
+      </section>
+
+      <section id="items">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Equipment</p>
+            <h2>Item Codex</h2>
+          </div>
+          <p id="items-meta" class="meta"></p>
+        </div>
+        <div id="item-summary" class="summary-strip"></div>
+        <div id="items-grid" class="grid"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

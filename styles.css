@@ -1,0 +1,231 @@
+:root {
+  --bg: #081114;
+  --panel: rgba(10, 25, 29, 0.88);
+  --panel-strong: rgba(14, 35, 39, 0.96);
+  --line: #244247;
+  --line-soft: rgba(159, 232, 112, 0.15);
+  --ink: #ebf6f4;
+  --muted: #95b5af;
+  --accent: #9fe870;
+  --accent-2: #f7c86e;
+  --accent-3: #74d6cf;
+  --danger: #ff9d88;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 0%, rgba(159, 232, 112, 0.2), transparent 28%),
+    radial-gradient(circle at 85% 8%, rgba(116, 214, 207, 0.16), transparent 20%),
+    linear-gradient(180deg, #0f2327 0%, var(--bg) 42%);
+}
+
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 12px;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.hero, .card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 18px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 34px;
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+  background:
+    linear-gradient(135deg, rgba(159, 232, 112, 0.06), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 72%),
+    var(--panel-strong);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -30% auto;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(247, 200, 110, 0.25), transparent 65%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.hero-copy {
+  max-width: 62ch;
+  margin-bottom: 18px;
+}
+
+.meta {
+  color: var(--muted);
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.76rem;
+  color: var(--accent-3);
+}
+
+.status-panel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  margin: 6px 0 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.status-panel.error {
+  color: var(--danger);
+  border-color: rgba(255, 157, 136, 0.28);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.command-groups {
+  display: grid;
+  gap: 16px;
+}
+
+.command-group {
+  padding: 22px;
+}
+
+.command-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.command-card {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.badge, .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.badge {
+  color: var(--accent-2);
+  text-transform: capitalize;
+}
+
+.pill-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.summary-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.summary-chip {
+  min-width: 120px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.summary-chip strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+code {
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.fallback-card {
+  grid-column: 1 / -1;
+  border: 1px solid rgba(255, 157, 136, 0.28);
+}
+
+@media (max-width: 740px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: start;
+  }
+}
