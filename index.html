@@ -11,7 +11,12 @@
       <header class="hero">
         <p class="eyebrow">Read-only companion</p>
         <h1>Minigame Codex</h1>
-        <p class="hero-copy">A field manual for spores, wellsprings, and arena builds. The command guide and item codex are generated from the same repository data that powers the minigame, so balance and content changes stay in sync.</p>
+        <p class="hero-copy">A field manual for spores, wellsprings, and arena builds. Each page element is generated from the same repository data that powers the minigame, so balance changes and command docs stay in lockstep with the actual game.</p>
+        <div class="hero-ribbon">
+          <span>Arcane field notes</span>
+          <span>Live command reference</span>
+          <span>Generated from game data</span>
+        </div>
         <div id="status-panel" class="status-panel">Loading codex data...</div>
         <nav>
           <a href="#field-guide">Field Guide</a>
@@ -44,7 +49,7 @@
             <p class="section-label">Operations</p>
             <h2>Command Guide</h2>
           </div>
-          <p class="meta">Grouped by the way you actually play: progression, map control, and PvP.</p>
+          <p class="meta">Every relevant subcommand is listed with a one-line explanation so you can scan the full ruleset without checking Discord command help.</p>
         </div>
         <div id="commands-grid" class="command-groups"></div>
       </section>
@@ -59,6 +64,13 @@
         </div>
         <div id="item-summary" class="summary-strip"></div>
         <div id="items-grid" class="grid"></div>
+        <template id="item-card-template">
+          <article class="card item-card">
+            <div class="card-header"></div>
+            <div class="pill-row"></div>
+            <footer class="item-card-footer"></footer>
+          </article>
+        </template>
       </section>
     </main>
 

@@ -20,11 +20,18 @@ export function validateSiteData(siteData) {
   return siteData;
 }
 
+const STAT_EMOJIS = {
+  attack: '⚔️',
+  hp: '💚',
+  armor: '🛡️',
+  hpCost: '🩸',
+};
+
 function renderStats(stats) {
   const entries = Object.entries(stats ?? {});
   if (!entries.length) return '<span class="meta">No direct stat changes</span>';
   return entries
-    .map(([key, value]) => `<span class="pill">${escapeHtml(key)}: ${escapeHtml(value)}</span>`)
+    .map(([key, value]) => `<span class="pill stat-chip">${STAT_EMOJIS[key] ?? '✨'} <span>${escapeHtml(key)}: ${escapeHtml(value)}</span></span>`)
     .join('');
 }
 
@@ -77,9 +84,10 @@ function renderCommands(document, commands) {
       <div class="command-grid">
         ${sectionCommands.map(command => `
           <article class="card command-card">
+            ${command.parent ? `<div class="command-parent">/${escapeHtml(command.parent)}</div>` : ''}
             <h3>/${escapeHtml(command.name)}</h3>
+            <div class="command-signature"><code>${escapeHtml(command.usage)}</code></div>
             <p>${escapeHtml(command.description)}</p>
-            <p><code>${escapeHtml(command.usage)}</code></p>
             <p class="meta">${escapeHtml(command.details)}</p>
           </article>
         `).join('')}
@@ -112,10 +120,14 @@ function renderItems(document, items) {
         <h3>${escapeHtml(item.name)}</h3>
         <span class="badge">${escapeHtml(item.rarity)}</span>
       </div>
-      <p class="meta"><code>${escapeHtml(item.id)}</code> · ${escapeHtml(item.slot)} · ${escapeHtml(item.price)} spores</p>
       <p>${escapeHtml(item.description ?? 'No description')}</p>
       <div class="pill-row">${renderStats(item.stats)}</div>
       <p class="meta">Ability: ${renderAbility(item.ability)}</p>
+      ${item.flavor ? `<p class="item-flavor">“${escapeHtml(item.flavor)}”</p>` : ''}
+      <footer class="item-card-footer">
+        <span><code>${escapeHtml(item.id)}</code></span>
+        <span>${escapeHtml(item.price)} spores</span>
+      </footer>
     </article>
   `).join('');
 }

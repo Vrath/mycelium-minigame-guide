@@ -54,11 +54,12 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 34px;
+  padding: 38px;
   box-shadow: var(--shadow);
   margin-bottom: 28px;
   background:
     linear-gradient(135deg, rgba(159, 232, 112, 0.06), transparent 38%),
+    radial-gradient(circle at top right, rgba(247, 200, 110, 0.14), transparent 28%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 72%),
     var(--panel-strong);
 }
@@ -77,6 +78,23 @@ p {
 .hero-copy {
   max-width: 62ch;
   margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.hero-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.hero-ribbon span {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--accent-2);
+  font-size: 0.85rem;
 }
 
 .meta {
@@ -127,7 +145,10 @@ p {
 }
 
 .command-group {
-  padding: 22px;
+  padding: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 65%),
+    var(--panel);
 }
 
 .command-grid {
@@ -139,6 +160,27 @@ p {
 .command-card {
   border: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.03);
+  min-height: 100%;
+}
+
+.command-card h3 {
+  margin-bottom: 10px;
+}
+
+.command-signature {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(159, 232, 112, 0.08);
+  border: 1px solid var(--line-soft);
+}
+
+.command-parent {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--accent-2);
+  font-size: 0.82rem;
 }
 
 .card-header {
@@ -170,11 +212,47 @@ p {
   text-transform: capitalize;
 }
 
+.item-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 65%),
+    var(--panel);
+}
+
 .pill-row {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
   margin: 12px 0;
+}
+
+.stat-chip {
+  gap: 6px;
+}
+
+.item-flavor {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.item-card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.item-card-footer code {
+  font-size: 0.82rem;
 }
 
 .summary-strip {
@@ -195,6 +273,10 @@ p {
 .summary-chip strong {
   display: block;
   font-size: 1.1rem;
+}
+
+.summary-chip .meta {
+  text-transform: capitalize;
 }
 
 code {
