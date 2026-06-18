@@ -46,6 +46,9 @@ function renderAbility(ability) {
 
 function groupCommands(commands) {
   return commands.reduce((groups, command) => {
+    if (!command.parent && (command.name === 'game' || command.name === 'arena')) {
+      return groups;
+    }
     const section = command.section ?? 'Other';
     groups[section] ??= [];
     groups[section].push(command);
@@ -98,24 +101,30 @@ function renderCommands(document, commands) {
 
 function buildItemSummary(items) {
   const byRarity = items.reduce((summary, item) => {
-    summary[item.rarity] = (summary[item.rarity] ?? 0) + 1;
+    summary[item.rarity] ??= { count: 0, firstId: item.id };
+    summary[item.rarity].count += 1;
     return summary;
   }, {});
 
-  return Object.entries(byRarity).map(([rarity, count]) => `
-    <div class="summary-chip">
+  return Object.entries(byRarity).map(([rarity, meta]) => `
+    <a class="summary-chip" href="#item-rarity-${escapeHtml(rarity)}">
       <span class="meta">${escapeHtml(rarity)}</span>
-      <strong>${count}</strong>
-    </div>
+      <strong>${meta.count}</strong>
+    </a>
   `).join('');
 }
 
 function renderItems(document, items) {
   document.getElementById('items-meta').textContent = `Generated from live game definitions. Total items: ${items.length}`;
   document.getElementById('item-summary').innerHTML = buildItemSummary(items);
+  const firstItemByRarity = new Set();
   const root = document.getElementById('items-grid');
   root.innerHTML = items.map(item => `
-    <article class="card item-card">
+    <article class="card item-card"${(() => {
+      if (firstItemByRarity.has(item.rarity)) return '';
+      firstItemByRarity.add(item.rarity);
+      return ` id="item-rarity-${escapeHtml(item.rarity)}"`;
+    })()}>
       <div class="card-header">
         <h3>${escapeHtml(item.name)}</h3>
         <span class="badge">${escapeHtml(item.rarity)}</span>
