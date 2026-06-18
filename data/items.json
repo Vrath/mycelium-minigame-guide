@@ -12,7 +12,8 @@
       "id": "ambush",
       "name": "ambush"
     },
-    "description": "+4 attack. Ambush: deal double damage on your first attack."
+    "description": "+4 attack. Ambush: deal double damage on first attack",
+    "flavor": null
   },
   {
     "id": "ancient_sword",
@@ -27,7 +28,8 @@
       "id": "heroic",
       "name": "heroic"
     },
-    "description": "−9 attack. Heroic: after each attack, gain attack equal to damage dealt."
+    "description": "−9 attack. Heroic: gain attack equal to damage dealt",
+    "flavor": null
   },
   {
     "id": "barbarian_suit",
@@ -40,7 +42,8 @@
       "armor": 1
     },
     "ability": null,
-    "description": "+2 attack, +1 armor."
+    "description": "+2 attack, +1 armor",
+    "flavor": null
   },
   {
     "id": "bloodrush_beads",
@@ -53,7 +56,8 @@
       "hp": -5
     },
     "ability": null,
-    "description": "+2 attack, -5 HP."
+    "description": "+2 attack, −5 HP",
+    "flavor": null
   },
   {
     "id": "bloom_salve",
@@ -69,7 +73,8 @@
       "name": "regeneration",
       "healPerTurn": 3
     },
-    "description": "+2 HP. Regeneration: heal 3 HP after each turn survived."
+    "description": "+2 HP. Regeneration: heal 3 HP after each turn survived",
+    "flavor": null
   },
   {
     "id": "darkthorn_shield",
@@ -86,7 +91,8 @@
       "name": "thorn",
       "reflect": 2
     },
-    "description": "+4 armor, -10 HP. Thorn: Reflects 2 damage on each hit taken."
+    "description": "−10 HP, +4 armor. Thorn: reflects 2 damage on each hit taken",
+    "flavor": null
   },
   {
     "id": "ethereal_ring",
@@ -101,7 +107,8 @@
       "id": "ethereal_barrier",
       "name": "ethereal_barrier"
     },
-    "description": "+3 attack. Ethereal Barrier: the first hit you take is fully negated."
+    "description": "+3 attack. Ethereal Barrier: first hit fully negated",
+    "flavor": null
   },
   {
     "id": "fiery_armor",
@@ -114,7 +121,8 @@
       "hpCost": 2
     },
     "ability": null,
-    "description": "+4 armor. Lose 2 HP every turn."
+    "description": "+4 armor, lose 2 HP per turn",
+    "flavor": null
   },
   {
     "id": "fiery_concoction",
@@ -131,7 +139,8 @@
       "attackGain": 2,
       "hpCost": 2
     },
-    "description": "+5 HP. Fiery: each turn end, gain +2 attack but lose 2 HP."
+    "description": "+5 HP. Fiery: gain +2 attack but lose 2 HP each turn end",
+    "flavor": null
   },
   {
     "id": "fiery_longsword",
@@ -144,7 +153,8 @@
       "hpCost": 2
     },
     "ability": null,
-    "description": "+6 attack. Lose 2 HP each turn."
+    "description": "+6 attack, lose 2 HP per turn",
+    "flavor": null
   },
   {
     "id": "fiery_ring",
@@ -157,7 +167,8 @@
       "hpCost": 2
     },
     "ability": null,
-    "description": "+4 attack. Lose 2 HP every turn."
+    "description": "+4 attack, lose 2 HP per turn",
+    "flavor": null
   },
   {
     "id": "hazeveil_wrap",
@@ -169,7 +180,8 @@
       "hp": 8
     },
     "ability": null,
-    "description": "+8 HP."
+    "description": "+8 HP",
+    "flavor": null
   },
   {
     "id": "iron_buckler",
@@ -181,7 +193,8 @@
       "armor": 3
     },
     "ability": null,
-    "description": "+3 armor."
+    "description": "+3 armor",
+    "flavor": null
   },
   {
     "id": "leather_armor",
@@ -194,7 +207,8 @@
       "hp": 5
     },
     "ability": null,
-    "description": "+2 armor, +5 HP."
+    "description": "+5 HP, +2 armor",
+    "flavor": null
   },
   {
     "id": "leeching_lens",
@@ -210,7 +224,8 @@
       "name": "vampirism",
       "healFraction": 0.25
     },
-    "description": "+5 HP. Vampirism 25: heal 25% of damage dealt."
+    "description": "+5 HP. Vampirism: heals 25% of damage dealt",
+    "flavor": null
   },
   {
     "id": "mossbound_cudgel",
@@ -223,7 +238,8 @@
       "armor": 1
     },
     "ability": null,
-    "description": "+1 attack, +1 armor."
+    "description": "+1 attack, +1 armor",
+    "flavor": null
   },
   {
     "id": "mycelial_plate",
@@ -239,7 +255,8 @@
       "name": "thorn",
       "reflect": 2
     },
-    "description": "+3 armor. Thorn 2: reflects 2 damage on each hit taken."
+    "description": "+3 armor. Thorn: reflects 2 damage on each hit taken",
+    "flavor": null
   },
   {
     "id": "needleglass_shiv",
@@ -255,7 +272,8 @@
       "name": "void",
       "ignoreArmor": 3
     },
-    "description": "+2 attack. Pierce 3: ignores 3 armor."
+    "description": "+2 attack. Void: ignores 3 of defender's armor",
+    "flavor": null
   },
   {
     "id": "orc_shield",
@@ -272,7 +290,8 @@
       "name": "enrage",
       "attackGain": 3
     },
-    "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage."
+    "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage",
+    "flavor": null
   },
   {
     "id": "potion_anger",
@@ -284,7 +303,8 @@
       "attack": 2
     },
     "ability": null,
-    "description": "+2 attack."
+    "description": "+2 attack",
+    "flavor": null
   },
   {
     "id": "quarterstaff",
@@ -297,7 +317,8 @@
       "armor": 1
     },
     "ability": null,
-    "description": "+2 attack, +1 armor."
+    "description": "+2 attack, +1 armor",
+    "flavor": null
   },
   {
     "id": "redline_hatchet",
@@ -310,7 +331,8 @@
       "hpCost": 2
     },
     "ability": null,
-    "description": "+5 attack. Drain 2: lose 2 HP each turn."
+    "description": "+5 attack, lose 2 HP per turn",
+    "flavor": null
   },
   {
     "id": "sharpened_claw",
@@ -322,7 +344,8 @@
       "attack": 3
     },
     "ability": null,
-    "description": "+3 attack."
+    "description": "+3 attack",
+    "flavor": null
   },
   {
     "id": "silken_cloth",
@@ -334,7 +357,8 @@
       "hp": 10
     },
     "ability": null,
-    "description": "+10 HP."
+    "description": "+10 HP",
+    "flavor": null
   },
   {
     "id": "sporeguard_charm",
@@ -346,7 +370,8 @@
       "hp": 10
     },
     "ability": null,
-    "description": "+10 HP."
+    "description": "+10 HP",
+    "flavor": null
   },
   {
     "id": "potion_stoneskin",
@@ -359,7 +384,8 @@
       "armor": 4
     },
     "ability": null,
-    "description": "-2 attack, +4 armor."
+    "description": "−2 attack, +4 armor",
+    "flavor": null
   },
   {
     "id": "thornstalk_ring",
@@ -375,7 +401,8 @@
       "name": "thorn",
       "reflect": 2
     },
-    "description": "+2 attack. Thorn: Reflects 2 damage on each hit taken."
+    "description": "+2 attack. Thorn: reflects 2 damage on each hit taken",
+    "flavor": null
   },
   {
     "id": "thornweave_cloak",
@@ -391,7 +418,8 @@
       "name": "thorn",
       "reflect": 2
     },
-    "description": "+2 armor. Thorn: reflects 2 damage on each hit taken."
+    "description": "+2 armor. Thorn: reflects 2 damage on each hit taken",
+    "flavor": null
   },
   {
     "id": "travelers_charm",
@@ -403,7 +431,8 @@
       "hp": 10
     },
     "ability": null,
-    "description": "+10 HP."
+    "description": "+10 HP",
+    "flavor": null
   },
   {
     "id": "turtle_shell",
@@ -415,7 +444,8 @@
       "armor": 2
     },
     "ability": null,
-    "description": "+2 armor."
+    "description": "+2 armor",
+    "flavor": null
   },
   {
     "id": "twin_knives",
@@ -430,7 +460,8 @@
       "id": "double_strike",
       "name": "double_strike"
     },
-    "description": "−4 attack. Double Strike: attack twice per turn."
+    "description": "−4 attack. Double Strike: attack twice per turn",
+    "flavor": null
   },
   {
     "id": "vampiric_dagger",
@@ -446,7 +477,8 @@
       "name": "vampirism",
       "healFraction": 0.5
     },
-    "description": "+2 attack. Vampirism: heal 50% of damage dealt (after armor)."
+    "description": "+2 attack. Vampirism: heals 50% of damage dealt",
+    "flavor": null
   },
   {
     "id": "void_fang",
@@ -463,7 +495,8 @@
       "name": "void",
       "ignoreArmor": 2
     },
-    "description": "+4 attack. Void: ignores 2 of defender's armor."
+    "description": "+4 attack, −5 HP. Void: ignores 2 of defender's armor",
+    "flavor": null
   },
   {
     "id": "void_ring",
@@ -480,7 +513,8 @@
       "name": "void",
       "ignoreArmor": 2
     },
-    "description": "+2 attack, -5 HP. Void: Ignore 2 points of armor."
+    "description": "+2 attack, −5 HP. Void: ignores 2 of defender's armor",
+    "flavor": null
   },
   {
     "id": "warhide_vest",
@@ -493,7 +527,8 @@
       "hp": -5
     },
     "ability": null,
-    "description": "+2 attack, -5 HP."
+    "description": "+2 attack, −5 HP",
+    "flavor": null
   },
   {
     "id": "warped_blade",
@@ -506,7 +541,8 @@
       "hp": -10
     },
     "ability": null,
-    "description": "+8 attack, -10 HP."
+    "description": "+8 attack, −10 HP",
+    "flavor": null
   },
   {
     "id": "wooden_club",
@@ -519,6 +555,7 @@
       "hp": 5
     },
     "ability": null,
-    "description": "+2 attack, +5 HP."
+    "description": "+2 attack, +5 HP",
+    "flavor": null
   }
 ]
