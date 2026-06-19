@@ -1,0 +1,185 @@
+[
+  {
+    "id": "verdant",
+    "label": "Verdant",
+    "description": "Both fighters gain +10 HP",
+    "rarity": "common",
+    "sporesPerHour": 20,
+    "modifiers": {
+      "hp": 10
+    },
+    "grantAbilities": [],
+    "guardian": null,
+    "guardianHint": null
+  },
+  {
+    "id": "hollow",
+    "label": "Hollow",
+    "description": "Both fighters start with −10 HP",
+    "rarity": "common",
+    "sporesPerHour": 20,
+    "modifiers": {
+      "hp": -10
+    },
+    "grantAbilities": [],
+    "guardian": null,
+    "guardianHint": null
+  },
+  {
+    "id": "fevered",
+    "label": "Fevered",
+    "description": "Both fighters gain +2 attack",
+    "rarity": "common",
+    "sporesPerHour": 20,
+    "modifiers": {
+      "attack": 2
+    },
+    "grantAbilities": [],
+    "guardian": null,
+    "guardianHint": null
+  },
+  {
+    "id": "still",
+    "label": "Still",
+    "description": "Both fighters gain +2 armor",
+    "rarity": "common",
+    "sporesPerHour": 20,
+    "modifiers": {
+      "armor": 2
+    },
+    "grantAbilities": [],
+    "guardian": null,
+    "guardianHint": null
+  },
+  {
+    "id": "ashen",
+    "label": "Ashen",
+    "description": "Both fighters: −2 attack, +3 armor",
+    "rarity": "common",
+    "sporesPerHour": 20,
+    "modifiers": {
+      "attack": -2,
+      "armor": 3
+    },
+    "grantAbilities": [],
+    "guardian": null,
+    "guardianHint": null
+  },
+  {
+    "id": "burning_surge",
+    "label": "Burning Surge",
+    "description": "Intense heat fills the air. Fighters grow stronger each turn, but vitality drains away.",
+    "rarity": "uncommon",
+    "sporesPerHour": 30,
+    "modifiers": {
+      "attack": 4
+    },
+    "grantAbilities": [
+      {
+        "name": "fiery",
+        "attackGain": 2,
+        "hpCost": 2
+      }
+    ],
+    "guardian": {
+      "hp": 80,
+      "attack": 8,
+      "armor": 0,
+      "abilities": [
+        "vampirism"
+      ]
+    },
+    "guardianHint": "The Guardian heals from the damage it deals. Armor cuts its sustain — don't let the fight drag on."
+  },
+  {
+    "id": "hollow_echo",
+    "label": "Hollow Echo",
+    "description": "An eerie void saps both fighters. The Guardian endures what others cannot.",
+    "rarity": "uncommon",
+    "sporesPerHour": 30,
+    "modifiers": {
+      "hp": -8
+    },
+    "grantAbilities": [],
+    "guardian": {
+      "hp": 80,
+      "attack": 8,
+      "armor": 0,
+      "abilities": [
+        "ethereal_barrier",
+        "thorn"
+      ]
+    },
+    "guardianHint": "Your first strike will be absorbed. After that, every hit you land comes back to sting you. Burst it down or bring regeneration."
+  },
+  {
+    "id": "still_waters",
+    "label": "Still Waters",
+    "description": "The air thickens. Both fighters move slowly behind heavy defenses.",
+    "rarity": "uncommon",
+    "sporesPerHour": 30,
+    "modifiers": {
+      "armor": 4
+    },
+    "grantAbilities": [],
+    "guardian": {
+      "hp": 80,
+      "attack": 8,
+      "armor": 2,
+      "abilities": [
+        "double_strike",
+        "pierce"
+      ]
+    },
+    "guardianHint": "The Guardian punches through armor and hits twice. Armor won't save you here — bring attack power or Void."
+  },
+  {
+    "id": "smoldering_depths",
+    "label": "Smoldering Depths",
+    "description": "Scorching flames engulf both fighters. Only those built to endure will survive this heat.",
+    "rarity": "rare",
+    "sporesPerHour": 50,
+    "modifiers": {
+      "attack": 6,
+      "hp": -10
+    },
+    "grantAbilities": [
+      {
+        "name": "fiery",
+        "attackGain": 2,
+        "hpCost": 2
+      }
+    ],
+    "guardian": {
+      "hp": 80,
+      "attack": 15,
+      "armor": 2,
+      "abilities": [
+        "vampirism"
+      ]
+    },
+    "guardianHint": "The Guardian heals from every blow you land. Armor won't save you — bring your own vampirism or thorn to outrace its sustain."
+  },
+  {
+    "id": "corrupted_nexus",
+    "label": "Corrupted Nexus",
+    "description": "Dark energy warps the battlefield. The Guardian shrugs off your first blow, then grows stronger with each exchange.",
+    "rarity": "rare",
+    "sporesPerHour": 50,
+    "modifiers": {
+      "attack": 3,
+      "armor": 2
+    },
+    "grantAbilities": [],
+    "guardian": {
+      "hp": 100,
+      "attack": 14,
+      "armor": 0,
+      "abilities": [
+        "ethereal_barrier",
+        "enrage"
+      ]
+    },
+    "guardianHint": "Your opening strike is absorbed. After that, every hit you land makes it stronger. Match its escalation — Orc Shield is the key."
+  }
+]
