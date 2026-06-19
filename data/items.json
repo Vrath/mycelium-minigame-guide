@@ -1,37 +1,5 @@
 [
   {
-    "id": "ambush_blade",
-    "name": "Ambush Blade",
-    "slot": "weapon",
-    "rarity": "rare",
-    "price": 1500,
-    "stats": {
-      "attack": 4
-    },
-    "ability": {
-      "id": "ambush",
-      "name": "ambush"
-    },
-    "description": "+4 attack. Ambush: deal double damage on first attack",
-    "flavor": null
-  },
-  {
-    "id": "ancient_sword",
-    "name": "Ancient Sword",
-    "slot": "weapon",
-    "rarity": "epic",
-    "price": 5000,
-    "stats": {
-      "attack": -9
-    },
-    "ability": {
-      "id": "heroic",
-      "name": "heroic"
-    },
-    "description": "−9 attack. Heroic: gain attack equal to damage dealt",
-    "flavor": null
-  },
-  {
     "id": "barbarian_suit",
     "name": "Barbarian Suit",
     "slot": "armor",
@@ -74,100 +42,6 @@
       "healPerTurn": 3
     },
     "description": "+2 HP. Regeneration: heal 3 HP after each turn survived",
-    "flavor": null
-  },
-  {
-    "id": "darkthorn_shield",
-    "name": "Darkthorn Shield",
-    "slot": "armor",
-    "rarity": "rare",
-    "price": 1500,
-    "stats": {
-      "armor": 4,
-      "hp": -10
-    },
-    "ability": {
-      "id": "thorn",
-      "name": "thorn",
-      "reflect": 2
-    },
-    "description": "−10 HP, +4 armor. Thorn: reflects 2 damage on each hit taken",
-    "flavor": null
-  },
-  {
-    "id": "ethereal_ring",
-    "name": "Ethereal Ring",
-    "slot": "accessory",
-    "rarity": "epic",
-    "price": 5000,
-    "stats": {
-      "attack": 3
-    },
-    "ability": {
-      "id": "ethereal_barrier",
-      "name": "ethereal_barrier"
-    },
-    "description": "+3 attack. Ethereal Barrier: first hit fully negated",
-    "flavor": null
-  },
-  {
-    "id": "fiery_armor",
-    "name": "Fiery Armor",
-    "slot": "armor",
-    "rarity": "uncommon",
-    "price": 600,
-    "stats": {
-      "armor": 4,
-      "hpCost": 2
-    },
-    "ability": null,
-    "description": "+4 armor, lose 2 HP per turn",
-    "flavor": null
-  },
-  {
-    "id": "fiery_concoction",
-    "name": "Fiery Concoction",
-    "slot": "accessory",
-    "rarity": "rare",
-    "price": 1400,
-    "stats": {
-      "hp": 5
-    },
-    "ability": {
-      "id": "fiery",
-      "name": "fiery",
-      "attackGain": 2,
-      "hpCost": 2
-    },
-    "description": "+5 HP. Fiery: gain +2 attack but lose 2 HP each turn end",
-    "flavor": null
-  },
-  {
-    "id": "fiery_longsword",
-    "name": "Fiery Longsword",
-    "slot": "weapon",
-    "rarity": "uncommon",
-    "price": 500,
-    "stats": {
-      "attack": 6,
-      "hpCost": 2
-    },
-    "ability": null,
-    "description": "+6 attack, lose 2 HP per turn",
-    "flavor": null
-  },
-  {
-    "id": "fiery_ring",
-    "name": "Fiery Ring",
-    "slot": "accessory",
-    "rarity": "uncommon",
-    "price": 600,
-    "stats": {
-      "attack": 4,
-      "hpCost": 2
-    },
-    "ability": null,
-    "description": "+4 attack, lose 2 HP per turn",
     "flavor": null
   },
   {
@@ -228,6 +102,23 @@
     "flavor": null
   },
   {
+    "id": "moss_armor",
+    "name": "Moss Armor",
+    "slot": "armor",
+    "rarity": "common",
+    "price": 160,
+    "stats": {
+      "armor": 2
+    },
+    "ability": {
+      "id": "regeneration",
+      "name": "regeneration",
+      "healPerTurn": 2
+    },
+    "description": "+2 armor. Regeneration: heal 2 HP after each turn survived",
+    "flavor": null
+  },
+  {
     "id": "mossbound_cudgel",
     "name": "Mossbound Cudgel",
     "slot": "weapon",
@@ -268,29 +159,11 @@
       "attack": 2
     },
     "ability": {
-      "id": "void",
-      "name": "void",
+      "id": "pierce",
+      "name": "pierce",
       "ignoreArmor": 3
     },
-    "description": "+2 attack. Void: ignores 3 of defender's armor",
-    "flavor": null
-  },
-  {
-    "id": "orc_shield",
-    "name": "Orc Shield",
-    "slot": "armor",
-    "rarity": "uncommon",
-    "price": 450,
-    "stats": {
-      "hp": -10,
-      "armor": 1
-    },
-    "ability": {
-      "id": "enrage",
-      "name": "enrage",
-      "attackGain": 3
-    },
-    "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage",
+    "description": "+2 attack. Pierce: ignores 3 of defender's armor",
     "flavor": null
   },
   {
@@ -335,6 +208,23 @@
     "flavor": null
   },
   {
+    "id": "rusted_cleaver",
+    "name": "Rusted Cleaver",
+    "slot": "weapon",
+    "rarity": "common",
+    "price": 120,
+    "stats": {
+      "attack": 3
+    },
+    "ability": {
+      "id": "sunder",
+      "name": "sunder",
+      "armorReduction": 1
+    },
+    "description": "+3 attack. Sunder: reduce enemy armor by 1 per hit",
+    "flavor": null
+  },
+  {
     "id": "sharpened_claw",
     "name": "Sharpened Claw",
     "slot": "weapon",
@@ -371,6 +261,238 @@
     },
     "ability": null,
     "description": "+10 HP",
+    "flavor": null
+  },
+  {
+    "id": "travelers_charm",
+    "name": "Traveler's Charm",
+    "slot": "accessory",
+    "rarity": "common",
+    "price": 80,
+    "stats": {
+      "hp": 10
+    },
+    "ability": null,
+    "description": "+10 HP",
+    "flavor": null
+  },
+  {
+    "id": "turtle_shell",
+    "name": "Turtle Shell",
+    "slot": "accessory",
+    "rarity": "common",
+    "price": 80,
+    "stats": {
+      "armor": 2
+    },
+    "ability": null,
+    "description": "+2 armor",
+    "flavor": null
+  },
+  {
+    "id": "warhide_vest",
+    "name": "Warhide Vest",
+    "slot": "armor",
+    "rarity": "common",
+    "price": 80,
+    "stats": {
+      "attack": 2,
+      "hp": -5
+    },
+    "ability": null,
+    "description": "+2 attack, −5 HP",
+    "flavor": null
+  },
+  {
+    "id": "weaken_whip",
+    "name": "Weaken Whip",
+    "slot": "weapon",
+    "rarity": "common",
+    "price": 200,
+    "stats": {
+      "attack": 2
+    },
+    "ability": {
+      "id": "weaken",
+      "name": "weaken",
+      "attackReduction": 1
+    },
+    "description": "+2 attack. Weaken: reduce enemy attack by 1 per hit",
+    "flavor": null
+  },
+  {
+    "id": "wooden_club",
+    "name": "Wooden Club",
+    "slot": "weapon",
+    "rarity": "common",
+    "price": 80,
+    "stats": {
+      "attack": 2,
+      "hp": 5
+    },
+    "ability": null,
+    "description": "+2 attack, +5 HP",
+    "flavor": null
+  },
+  {
+    "id": "contagion_cloak",
+    "name": "Contagion Cloak",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "price": 320,
+    "stats": {
+      "armor": 2
+    },
+    "ability": {
+      "id": "contagion",
+      "name": "contagion",
+      "poisonPerHit": 2
+    },
+    "description": "+2 armor. Contagion: attacker gains 2 Poison when you are hit",
+    "flavor": null
+  },
+  {
+    "id": "fiery_armor",
+    "name": "Fiery Armor",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "price": 600,
+    "stats": {
+      "armor": 4,
+      "hpCost": 2
+    },
+    "ability": null,
+    "description": "+4 armor, lose 2 HP per turn",
+    "flavor": null
+  },
+  {
+    "id": "fiery_longsword",
+    "name": "Fiery Longsword",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "price": 500,
+    "stats": {
+      "attack": 6,
+      "hpCost": 2
+    },
+    "ability": null,
+    "description": "+6 attack, lose 2 HP per turn",
+    "flavor": null
+  },
+  {
+    "id": "fiery_ring",
+    "name": "Fiery Ring",
+    "slot": "accessory",
+    "rarity": "uncommon",
+    "price": 600,
+    "stats": {
+      "attack": 4,
+      "hpCost": 2
+    },
+    "ability": null,
+    "description": "+4 attack, lose 2 HP per turn",
+    "flavor": null
+  },
+  {
+    "id": "fortify_plate",
+    "name": "Fortify Plate",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "price": 350,
+    "stats": {
+      "armor": 1
+    },
+    "ability": {
+      "id": "fortify",
+      "name": "fortify",
+      "armorGain": 1
+    },
+    "description": "+1 armor. Fortify: gain +1 armor at end of each turn you were hit",
+    "flavor": null
+  },
+  {
+    "id": "frenzied_tooth",
+    "name": "Frenzied Tooth",
+    "slot": "accessory",
+    "rarity": "uncommon",
+    "price": 420,
+    "stats": {
+      "hp": 10
+    },
+    "ability": {
+      "id": "frenzy",
+      "name": "frenzy"
+    },
+    "description": "+10 HP. Frenzy: permanently attack twice per turn when HP drops below 50%",
+    "flavor": null
+  },
+  {
+    "id": "last_stand_stone",
+    "name": "Last Stand Stone",
+    "slot": "accessory",
+    "rarity": "uncommon",
+    "price": 380,
+    "stats": {
+      "hp": 5
+    },
+    "ability": {
+      "id": "last_stand",
+      "name": "last_stand",
+      "attackGain": 5
+    },
+    "description": "+5 HP. Last Stand: gain +5 attack when HP first drops below 25%",
+    "flavor": null
+  },
+  {
+    "id": "orc_shield",
+    "name": "Orc Shield",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "price": 450,
+    "stats": {
+      "hp": -10,
+      "armor": 1
+    },
+    "ability": {
+      "id": "enrage",
+      "name": "enrage",
+      "attackGain": 3
+    },
+    "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage",
+    "flavor": null
+  },
+  {
+    "id": "predators_claw",
+    "name": "Predator's Claw",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "price": 420,
+    "stats": {
+      "attack": 4
+    },
+    "ability": {
+      "id": "predator",
+      "name": "predator",
+      "attackBonus": 3
+    },
+    "description": "+4 attack. Predator: gain +3 attack while your HP exceeds enemy's",
+    "flavor": null
+  },
+  {
+    "id": "purge_charm",
+    "name": "Purge Charm",
+    "slot": "accessory",
+    "rarity": "uncommon",
+    "price": 350,
+    "stats": {
+      "hp": 10
+    },
+    "ability": {
+      "id": "purge",
+      "name": "purge",
+      "maxConvert": 3
+    },
+    "description": "+10 HP. Purge: convert up to 3 Poison into Barrier each turn end",
     "flavor": null
   },
   {
@@ -422,48 +544,6 @@
     "flavor": null
   },
   {
-    "id": "travelers_charm",
-    "name": "Traveler's Charm",
-    "slot": "accessory",
-    "rarity": "common",
-    "price": 80,
-    "stats": {
-      "hp": 10
-    },
-    "ability": null,
-    "description": "+10 HP",
-    "flavor": null
-  },
-  {
-    "id": "turtle_shell",
-    "name": "Turtle Shell",
-    "slot": "accessory",
-    "rarity": "common",
-    "price": 80,
-    "stats": {
-      "armor": 2
-    },
-    "ability": null,
-    "description": "+2 armor",
-    "flavor": null
-  },
-  {
-    "id": "twin_knives",
-    "name": "Twin Knives",
-    "slot": "weapon",
-    "rarity": "rare",
-    "price": 1600,
-    "stats": {
-      "attack": -4
-    },
-    "ability": {
-      "id": "double_strike",
-      "name": "double_strike"
-    },
-    "description": "−4 attack. Double Strike: attack twice per turn",
-    "flavor": null
-  },
-  {
     "id": "vampiric_dagger",
     "name": "Vampiric Dagger",
     "slot": "weapon",
@@ -481,6 +561,23 @@
     "flavor": null
   },
   {
+    "id": "venom_fang",
+    "name": "Venom Fang",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "price": 300,
+    "stats": {
+      "attack": 3
+    },
+    "ability": {
+      "id": "venom",
+      "name": "venom",
+      "poisonPerHit": 1
+    },
+    "description": "+3 attack. Venom: apply 1 Poison per hit",
+    "flavor": null
+  },
+  {
     "id": "void_fang",
     "name": "Void Fang",
     "slot": "weapon",
@@ -491,11 +588,11 @@
       "hp": -5
     },
     "ability": {
-      "id": "void",
-      "name": "void",
+      "id": "pierce",
+      "name": "pierce",
       "ignoreArmor": 2
     },
-    "description": "+4 attack, −5 HP. Void: ignores 2 of defender's armor",
+    "description": "+4 attack, −5 HP. Pierce: ignores 2 of defender's armor",
     "flavor": null
   },
   {
@@ -509,25 +606,11 @@
       "hp": -5
     },
     "ability": {
-      "id": "void",
-      "name": "void",
+      "id": "pierce",
+      "name": "pierce",
       "ignoreArmor": 2
     },
-    "description": "+2 attack, −5 HP. Void: ignores 2 of defender's armor",
-    "flavor": null
-  },
-  {
-    "id": "warhide_vest",
-    "name": "Warhide Vest",
-    "slot": "armor",
-    "rarity": "common",
-    "price": 80,
-    "stats": {
-      "attack": 2,
-      "hp": -5
-    },
-    "ability": null,
-    "description": "+2 attack, −5 HP",
+    "description": "+2 attack, −5 HP. Pierce: ignores 2 of defender's armor",
     "flavor": null
   },
   {
@@ -545,17 +628,282 @@
     "flavor": null
   },
   {
-    "id": "wooden_club",
-    "name": "Wooden Club",
+    "id": "wasting_blade",
+    "name": "Wasting Blade",
     "slot": "weapon",
-    "rarity": "common",
-    "price": 80,
+    "rarity": "uncommon",
+    "price": 380,
     "stats": {
-      "attack": 2,
+      "attack": 4
+    },
+    "ability": {
+      "id": "wither",
+      "name": "wither",
+      "maxHpReduction": 2
+    },
+    "description": "+4 attack. Wither: reduce enemy max HP by 2 per hit",
+    "flavor": null
+  },
+  {
+    "id": "ambush_blade",
+    "name": "Ambush Blade",
+    "slot": "weapon",
+    "rarity": "rare",
+    "price": 1500,
+    "stats": {
+      "attack": 4
+    },
+    "ability": {
+      "id": "ambush",
+      "name": "ambush",
+      "multiplier": 2
+    },
+    "description": "+4 attack. Ambush: deal 2x damage on first attack",
+    "flavor": null
+  },
+  {
+    "id": "darkthorn_shield",
+    "name": "Darkthorn Shield",
+    "slot": "armor",
+    "rarity": "rare",
+    "price": 1500,
+    "stats": {
+      "armor": 4,
+      "hp": -10
+    },
+    "ability": {
+      "id": "thorn",
+      "name": "thorn",
+      "reflect": 2
+    },
+    "description": "−10 HP, +4 armor. Thorn: reflects 2 damage on each hit taken",
+    "flavor": null
+  },
+  {
+    "id": "discharge_carapace",
+    "name": "Discharge Carapace",
+    "slot": "armor",
+    "rarity": "rare",
+    "price": 800,
+    "stats": {
+      "armor": 2
+    },
+    "ability": {
+      "id": "discharge",
+      "name": "discharge",
+      "damagePerCharge": 1
+    },
+    "description": "+2 armor. Discharge: deal 1× Charge as damage when hit",
+    "flavor": null
+  },
+  {
+    "id": "fiery_concoction",
+    "name": "Fiery Concoction",
+    "slot": "accessory",
+    "rarity": "rare",
+    "price": 1400,
+    "stats": {
+      "hp": 5
+    },
+    "ability": {
+      "id": "fiery",
+      "name": "fiery",
+      "attackGain": 2,
+      "hpCost": 2
+    },
+    "description": "+5 HP. Fiery: gain +2 attack but lose 2 HP each turn end",
+    "flavor": null
+  },
+  {
+    "id": "intoxicated_vial",
+    "name": "Intoxicated Vial",
+    "slot": "accessory",
+    "rarity": "rare",
+    "price": 680,
+    "stats": {
+      "hp": 5
+    },
+    "ability": {
+      "id": "intoxicated",
+      "name": "intoxicated",
+      "threshold": 3
+    },
+    "description": "+5 HP. Intoxicated: gain +3 attack while Poison ≥ 3",
+    "flavor": null
+  },
+  {
+    "id": "momentum_ring",
+    "name": "Momentum Ring",
+    "slot": "accessory",
+    "rarity": "rare",
+    "price": 720,
+    "stats": {
+      "hp": 5
+    },
+    "ability": {
+      "id": "momentum",
+      "name": "momentum",
+      "chargeCost": 3
+    },
+    "description": "+5 HP. Momentum: spend 3 Charge for an extra attack this turn",
+    "flavor": null
+  },
+  {
+    "id": "pestilence_shroud",
+    "name": "Pestilence Shroud",
+    "slot": "armor",
+    "rarity": "rare",
+    "price": 650,
+    "stats": {
+      "armor": 1
+    },
+    "ability": null,
+    "description": "+1 armor",
+    "flavor": null
+  },
+  {
+    "id": "siphoning_lance",
+    "name": "Siphoning Lance",
+    "slot": "weapon",
+    "rarity": "rare",
+    "price": 720,
+    "stats": {
+      "attack": 4
+    },
+    "ability": {
+      "id": "siphon",
+      "name": "siphon",
+      "chargeSteal": 2
+    },
+    "description": "+4 attack. Siphon: steal 2 Charge from enemy on hit",
+    "flavor": null
+  },
+  {
+    "id": "storm_core",
+    "name": "Storm Core",
+    "slot": "weapon",
+    "rarity": "rare",
+    "price": 860,
+    "stats": {
+      "attack": 2
+    },
+    "ability": {
+      "id": "overload",
+      "name": "overload",
+      "damage": 15
+    },
+    "description": "+2 attack. Overload: deal 15 damage and stun enemy when Charge reaches 10",
+    "flavor": null
+  },
+  {
+    "id": "supercharged_gem",
+    "name": "Supercharged Gem",
+    "slot": "accessory",
+    "rarity": "rare",
+    "price": 760,
+    "stats": {
+      "hp": 5
+    },
+    "ability": {
+      "id": "supercharged",
+      "name": "supercharged",
+      "threshold": 5
+    },
+    "description": "+5 HP. Supercharged: gain +5 attack while Charge ≥ 5",
+    "flavor": null
+  },
+  {
+    "id": "twin_knives",
+    "name": "Twin Knives",
+    "slot": "weapon",
+    "rarity": "rare",
+    "price": 1600,
+    "stats": {
+      "attack": -4
+    },
+    "ability": {
+      "id": "double_strike",
+      "name": "double_strike",
+      "count": 2
+    },
+    "description": "−4 attack. Double Strike: attack 2x per turn",
+    "flavor": null
+  },
+  {
+    "id": "warcry_banner",
+    "name": "Warcry Banner",
+    "slot": "accessory",
+    "rarity": "rare",
+    "price": 750,
+    "stats": {
       "hp": 5
     },
     "ability": null,
-    "description": "+2 attack, +5 HP",
+    "description": "+5 HP",
+    "flavor": null
+  },
+  {
+    "id": "warden_shield",
+    "name": "Warden Shield",
+    "slot": "armor",
+    "rarity": "rare",
+    "price": 850,
+    "stats": {
+      "armor": 2,
+      "barrier": 15
+    },
+    "ability": {
+      "id": "capacitor",
+      "name": "capacitor",
+      "maxChargeGain": 5
+    },
+    "description": "+2 armor, +15 barrier. Capacitor: gain Charge up to 5 per trigger when Barrier is lost",
+    "flavor": null
+  },
+  {
+    "id": "ancient_sword",
+    "name": "Ancient Sword",
+    "slot": "weapon",
+    "rarity": "epic",
+    "price": 5000,
+    "stats": {
+      "attack": -9
+    },
+    "ability": {
+      "id": "heroic",
+      "name": "heroic"
+    },
+    "description": "−9 attack. Heroic: gain attack equal to damage dealt",
+    "flavor": null
+  },
+  {
+    "id": "blood_pact_ring",
+    "name": "Blood Pact Ring",
+    "slot": "accessory",
+    "rarity": "epic",
+    "price": 1400,
+    "stats": {
+      "attack": 8
+    },
+    "ability": null,
+    "description": "+8 attack",
+    "flavor": null
+  },
+  {
+    "id": "ethereal_ring",
+    "name": "Ethereal Ring",
+    "slot": "accessory",
+    "rarity": "epic",
+    "price": 5000,
+    "stats": {
+      "attack": 3
+    },
+    "ability": {
+      "id": "ethereal_barrier",
+      "name": "ethereal_barrier",
+      "blockCount": 1
+    },
+    "description": "+3 attack. Ethereal Barrier: first 1 hit fully negated",
     "flavor": null
   }
 ]

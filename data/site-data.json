@@ -1,38 +1,6 @@
 {
-  "generatedAt": "2026-06-18T19:06:34.755Z",
+  "generatedAt": "2026-06-19T18:09:30.314Z",
   "items": [
-    {
-      "id": "ambush_blade",
-      "name": "Ambush Blade",
-      "slot": "weapon",
-      "rarity": "rare",
-      "price": 1500,
-      "stats": {
-        "attack": 4
-      },
-      "ability": {
-        "id": "ambush",
-        "name": "ambush"
-      },
-      "description": "+4 attack. Ambush: deal double damage on first attack",
-      "flavor": null
-    },
-    {
-      "id": "ancient_sword",
-      "name": "Ancient Sword",
-      "slot": "weapon",
-      "rarity": "epic",
-      "price": 5000,
-      "stats": {
-        "attack": -9
-      },
-      "ability": {
-        "id": "heroic",
-        "name": "heroic"
-      },
-      "description": "−9 attack. Heroic: gain attack equal to damage dealt",
-      "flavor": null
-    },
     {
       "id": "barbarian_suit",
       "name": "Barbarian Suit",
@@ -76,100 +44,6 @@
         "healPerTurn": 3
       },
       "description": "+2 HP. Regeneration: heal 3 HP after each turn survived",
-      "flavor": null
-    },
-    {
-      "id": "darkthorn_shield",
-      "name": "Darkthorn Shield",
-      "slot": "armor",
-      "rarity": "rare",
-      "price": 1500,
-      "stats": {
-        "armor": 4,
-        "hp": -10
-      },
-      "ability": {
-        "id": "thorn",
-        "name": "thorn",
-        "reflect": 2
-      },
-      "description": "−10 HP, +4 armor. Thorn: reflects 2 damage on each hit taken",
-      "flavor": null
-    },
-    {
-      "id": "ethereal_ring",
-      "name": "Ethereal Ring",
-      "slot": "accessory",
-      "rarity": "epic",
-      "price": 5000,
-      "stats": {
-        "attack": 3
-      },
-      "ability": {
-        "id": "ethereal_barrier",
-        "name": "ethereal_barrier"
-      },
-      "description": "+3 attack. Ethereal Barrier: first hit fully negated",
-      "flavor": null
-    },
-    {
-      "id": "fiery_armor",
-      "name": "Fiery Armor",
-      "slot": "armor",
-      "rarity": "uncommon",
-      "price": 600,
-      "stats": {
-        "armor": 4,
-        "hpCost": 2
-      },
-      "ability": null,
-      "description": "+4 armor, lose 2 HP per turn",
-      "flavor": null
-    },
-    {
-      "id": "fiery_concoction",
-      "name": "Fiery Concoction",
-      "slot": "accessory",
-      "rarity": "rare",
-      "price": 1400,
-      "stats": {
-        "hp": 5
-      },
-      "ability": {
-        "id": "fiery",
-        "name": "fiery",
-        "attackGain": 2,
-        "hpCost": 2
-      },
-      "description": "+5 HP. Fiery: gain +2 attack but lose 2 HP each turn end",
-      "flavor": null
-    },
-    {
-      "id": "fiery_longsword",
-      "name": "Fiery Longsword",
-      "slot": "weapon",
-      "rarity": "uncommon",
-      "price": 500,
-      "stats": {
-        "attack": 6,
-        "hpCost": 2
-      },
-      "ability": null,
-      "description": "+6 attack, lose 2 HP per turn",
-      "flavor": null
-    },
-    {
-      "id": "fiery_ring",
-      "name": "Fiery Ring",
-      "slot": "accessory",
-      "rarity": "uncommon",
-      "price": 600,
-      "stats": {
-        "attack": 4,
-        "hpCost": 2
-      },
-      "ability": null,
-      "description": "+4 attack, lose 2 HP per turn",
       "flavor": null
     },
     {
@@ -230,6 +104,23 @@
       "flavor": null
     },
     {
+      "id": "moss_armor",
+      "name": "Moss Armor",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 160,
+      "stats": {
+        "armor": 2
+      },
+      "ability": {
+        "id": "regeneration",
+        "name": "regeneration",
+        "healPerTurn": 2
+      },
+      "description": "+2 armor. Regeneration: heal 2 HP after each turn survived",
+      "flavor": null
+    },
+    {
       "id": "mossbound_cudgel",
       "name": "Mossbound Cudgel",
       "slot": "weapon",
@@ -270,29 +161,11 @@
         "attack": 2
       },
       "ability": {
-        "id": "void",
-        "name": "void",
+        "id": "pierce",
+        "name": "pierce",
         "ignoreArmor": 3
       },
-      "description": "+2 attack. Void: ignores 3 of defender's armor",
-      "flavor": null
-    },
-    {
-      "id": "orc_shield",
-      "name": "Orc Shield",
-      "slot": "armor",
-      "rarity": "uncommon",
-      "price": 450,
-      "stats": {
-        "hp": -10,
-        "armor": 1
-      },
-      "ability": {
-        "id": "enrage",
-        "name": "enrage",
-        "attackGain": 3
-      },
-      "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage",
+      "description": "+2 attack. Pierce: ignores 3 of defender's armor",
       "flavor": null
     },
     {
@@ -337,6 +210,23 @@
       "flavor": null
     },
     {
+      "id": "rusted_cleaver",
+      "name": "Rusted Cleaver",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 120,
+      "stats": {
+        "attack": 3
+      },
+      "ability": {
+        "id": "sunder",
+        "name": "sunder",
+        "armorReduction": 1
+      },
+      "description": "+3 attack. Sunder: reduce enemy armor by 1 per hit",
+      "flavor": null
+    },
+    {
       "id": "sharpened_claw",
       "name": "Sharpened Claw",
       "slot": "weapon",
@@ -373,6 +263,238 @@
       },
       "ability": null,
       "description": "+10 HP",
+      "flavor": null
+    },
+    {
+      "id": "travelers_charm",
+      "name": "Traveler's Charm",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "hp": 10
+      },
+      "ability": null,
+      "description": "+10 HP",
+      "flavor": null
+    },
+    {
+      "id": "turtle_shell",
+      "name": "Turtle Shell",
+      "slot": "accessory",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "armor": 2
+      },
+      "ability": null,
+      "description": "+2 armor",
+      "flavor": null
+    },
+    {
+      "id": "warhide_vest",
+      "name": "Warhide Vest",
+      "slot": "armor",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "hp": -5
+      },
+      "ability": null,
+      "description": "+2 attack, −5 HP",
+      "flavor": null
+    },
+    {
+      "id": "weaken_whip",
+      "name": "Weaken Whip",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 200,
+      "stats": {
+        "attack": 2
+      },
+      "ability": {
+        "id": "weaken",
+        "name": "weaken",
+        "attackReduction": 1
+      },
+      "description": "+2 attack. Weaken: reduce enemy attack by 1 per hit",
+      "flavor": null
+    },
+    {
+      "id": "wooden_club",
+      "name": "Wooden Club",
+      "slot": "weapon",
+      "rarity": "common",
+      "price": 80,
+      "stats": {
+        "attack": 2,
+        "hp": 5
+      },
+      "ability": null,
+      "description": "+2 attack, +5 HP",
+      "flavor": null
+    },
+    {
+      "id": "contagion_cloak",
+      "name": "Contagion Cloak",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 320,
+      "stats": {
+        "armor": 2
+      },
+      "ability": {
+        "id": "contagion",
+        "name": "contagion",
+        "poisonPerHit": 2
+      },
+      "description": "+2 armor. Contagion: attacker gains 2 Poison when you are hit",
+      "flavor": null
+    },
+    {
+      "id": "fiery_armor",
+      "name": "Fiery Armor",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "armor": 4,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+4 armor, lose 2 HP per turn",
+      "flavor": null
+    },
+    {
+      "id": "fiery_longsword",
+      "name": "Fiery Longsword",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 500,
+      "stats": {
+        "attack": 6,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+6 attack, lose 2 HP per turn",
+      "flavor": null
+    },
+    {
+      "id": "fiery_ring",
+      "name": "Fiery Ring",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 600,
+      "stats": {
+        "attack": 4,
+        "hpCost": 2
+      },
+      "ability": null,
+      "description": "+4 attack, lose 2 HP per turn",
+      "flavor": null
+    },
+    {
+      "id": "fortify_plate",
+      "name": "Fortify Plate",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 350,
+      "stats": {
+        "armor": 1
+      },
+      "ability": {
+        "id": "fortify",
+        "name": "fortify",
+        "armorGain": 1
+      },
+      "description": "+1 armor. Fortify: gain +1 armor at end of each turn you were hit",
+      "flavor": null
+    },
+    {
+      "id": "frenzied_tooth",
+      "name": "Frenzied Tooth",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 420,
+      "stats": {
+        "hp": 10
+      },
+      "ability": {
+        "id": "frenzy",
+        "name": "frenzy"
+      },
+      "description": "+10 HP. Frenzy: permanently attack twice per turn when HP drops below 50%",
+      "flavor": null
+    },
+    {
+      "id": "last_stand_stone",
+      "name": "Last Stand Stone",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 380,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "last_stand",
+        "name": "last_stand",
+        "attackGain": 5
+      },
+      "description": "+5 HP. Last Stand: gain +5 attack when HP first drops below 25%",
+      "flavor": null
+    },
+    {
+      "id": "orc_shield",
+      "name": "Orc Shield",
+      "slot": "armor",
+      "rarity": "uncommon",
+      "price": 450,
+      "stats": {
+        "hp": -10,
+        "armor": 1
+      },
+      "ability": {
+        "id": "enrage",
+        "name": "enrage",
+        "attackGain": 3
+      },
+      "description": "−10 HP, +1 armor. Enrage: gain +3 attack each time you take damage",
+      "flavor": null
+    },
+    {
+      "id": "predators_claw",
+      "name": "Predator's Claw",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 420,
+      "stats": {
+        "attack": 4
+      },
+      "ability": {
+        "id": "predator",
+        "name": "predator",
+        "attackBonus": 3
+      },
+      "description": "+4 attack. Predator: gain +3 attack while your HP exceeds enemy's",
+      "flavor": null
+    },
+    {
+      "id": "purge_charm",
+      "name": "Purge Charm",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "price": 350,
+      "stats": {
+        "hp": 10
+      },
+      "ability": {
+        "id": "purge",
+        "name": "purge",
+        "maxConvert": 3
+      },
+      "description": "+10 HP. Purge: convert up to 3 Poison into Barrier each turn end",
       "flavor": null
     },
     {
@@ -424,48 +546,6 @@
       "flavor": null
     },
     {
-      "id": "travelers_charm",
-      "name": "Traveler's Charm",
-      "slot": "accessory",
-      "rarity": "common",
-      "price": 80,
-      "stats": {
-        "hp": 10
-      },
-      "ability": null,
-      "description": "+10 HP",
-      "flavor": null
-    },
-    {
-      "id": "turtle_shell",
-      "name": "Turtle Shell",
-      "slot": "accessory",
-      "rarity": "common",
-      "price": 80,
-      "stats": {
-        "armor": 2
-      },
-      "ability": null,
-      "description": "+2 armor",
-      "flavor": null
-    },
-    {
-      "id": "twin_knives",
-      "name": "Twin Knives",
-      "slot": "weapon",
-      "rarity": "rare",
-      "price": 1600,
-      "stats": {
-        "attack": -4
-      },
-      "ability": {
-        "id": "double_strike",
-        "name": "double_strike"
-      },
-      "description": "−4 attack. Double Strike: attack twice per turn",
-      "flavor": null
-    },
-    {
       "id": "vampiric_dagger",
       "name": "Vampiric Dagger",
       "slot": "weapon",
@@ -483,6 +563,23 @@
       "flavor": null
     },
     {
+      "id": "venom_fang",
+      "name": "Venom Fang",
+      "slot": "weapon",
+      "rarity": "uncommon",
+      "price": 300,
+      "stats": {
+        "attack": 3
+      },
+      "ability": {
+        "id": "venom",
+        "name": "venom",
+        "poisonPerHit": 1
+      },
+      "description": "+3 attack. Venom: apply 1 Poison per hit",
+      "flavor": null
+    },
+    {
       "id": "void_fang",
       "name": "Void Fang",
       "slot": "weapon",
@@ -493,11 +590,11 @@
         "hp": -5
       },
       "ability": {
-        "id": "void",
-        "name": "void",
+        "id": "pierce",
+        "name": "pierce",
         "ignoreArmor": 2
       },
-      "description": "+4 attack, −5 HP. Void: ignores 2 of defender's armor",
+      "description": "+4 attack, −5 HP. Pierce: ignores 2 of defender's armor",
       "flavor": null
     },
     {
@@ -511,25 +608,11 @@
         "hp": -5
       },
       "ability": {
-        "id": "void",
-        "name": "void",
+        "id": "pierce",
+        "name": "pierce",
         "ignoreArmor": 2
       },
-      "description": "+2 attack, −5 HP. Void: ignores 2 of defender's armor",
-      "flavor": null
-    },
-    {
-      "id": "warhide_vest",
-      "name": "Warhide Vest",
-      "slot": "armor",
-      "rarity": "common",
-      "price": 80,
-      "stats": {
-        "attack": 2,
-        "hp": -5
-      },
-      "ability": null,
-      "description": "+2 attack, −5 HP",
+      "description": "+2 attack, −5 HP. Pierce: ignores 2 of defender's armor",
       "flavor": null
     },
     {
@@ -547,17 +630,282 @@
       "flavor": null
     },
     {
-      "id": "wooden_club",
-      "name": "Wooden Club",
+      "id": "wasting_blade",
+      "name": "Wasting Blade",
       "slot": "weapon",
-      "rarity": "common",
-      "price": 80,
+      "rarity": "uncommon",
+      "price": 380,
       "stats": {
-        "attack": 2,
+        "attack": 4
+      },
+      "ability": {
+        "id": "wither",
+        "name": "wither",
+        "maxHpReduction": 2
+      },
+      "description": "+4 attack. Wither: reduce enemy max HP by 2 per hit",
+      "flavor": null
+    },
+    {
+      "id": "ambush_blade",
+      "name": "Ambush Blade",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 1500,
+      "stats": {
+        "attack": 4
+      },
+      "ability": {
+        "id": "ambush",
+        "name": "ambush",
+        "multiplier": 2
+      },
+      "description": "+4 attack. Ambush: deal 2x damage on first attack",
+      "flavor": null
+    },
+    {
+      "id": "darkthorn_shield",
+      "name": "Darkthorn Shield",
+      "slot": "armor",
+      "rarity": "rare",
+      "price": 1500,
+      "stats": {
+        "armor": 4,
+        "hp": -10
+      },
+      "ability": {
+        "id": "thorn",
+        "name": "thorn",
+        "reflect": 2
+      },
+      "description": "−10 HP, +4 armor. Thorn: reflects 2 damage on each hit taken",
+      "flavor": null
+    },
+    {
+      "id": "discharge_carapace",
+      "name": "Discharge Carapace",
+      "slot": "armor",
+      "rarity": "rare",
+      "price": 800,
+      "stats": {
+        "armor": 2
+      },
+      "ability": {
+        "id": "discharge",
+        "name": "discharge",
+        "damagePerCharge": 1
+      },
+      "description": "+2 armor. Discharge: deal 1× Charge as damage when hit",
+      "flavor": null
+    },
+    {
+      "id": "fiery_concoction",
+      "name": "Fiery Concoction",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 1400,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "fiery",
+        "name": "fiery",
+        "attackGain": 2,
+        "hpCost": 2
+      },
+      "description": "+5 HP. Fiery: gain +2 attack but lose 2 HP each turn end",
+      "flavor": null
+    },
+    {
+      "id": "intoxicated_vial",
+      "name": "Intoxicated Vial",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 680,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "intoxicated",
+        "name": "intoxicated",
+        "threshold": 3
+      },
+      "description": "+5 HP. Intoxicated: gain +3 attack while Poison ≥ 3",
+      "flavor": null
+    },
+    {
+      "id": "momentum_ring",
+      "name": "Momentum Ring",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 720,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "momentum",
+        "name": "momentum",
+        "chargeCost": 3
+      },
+      "description": "+5 HP. Momentum: spend 3 Charge for an extra attack this turn",
+      "flavor": null
+    },
+    {
+      "id": "pestilence_shroud",
+      "name": "Pestilence Shroud",
+      "slot": "armor",
+      "rarity": "rare",
+      "price": 650,
+      "stats": {
+        "armor": 1
+      },
+      "ability": null,
+      "description": "+1 armor",
+      "flavor": null
+    },
+    {
+      "id": "siphoning_lance",
+      "name": "Siphoning Lance",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 720,
+      "stats": {
+        "attack": 4
+      },
+      "ability": {
+        "id": "siphon",
+        "name": "siphon",
+        "chargeSteal": 2
+      },
+      "description": "+4 attack. Siphon: steal 2 Charge from enemy on hit",
+      "flavor": null
+    },
+    {
+      "id": "storm_core",
+      "name": "Storm Core",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 860,
+      "stats": {
+        "attack": 2
+      },
+      "ability": {
+        "id": "overload",
+        "name": "overload",
+        "damage": 15
+      },
+      "description": "+2 attack. Overload: deal 15 damage and stun enemy when Charge reaches 10",
+      "flavor": null
+    },
+    {
+      "id": "supercharged_gem",
+      "name": "Supercharged Gem",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 760,
+      "stats": {
+        "hp": 5
+      },
+      "ability": {
+        "id": "supercharged",
+        "name": "supercharged",
+        "threshold": 5
+      },
+      "description": "+5 HP. Supercharged: gain +5 attack while Charge ≥ 5",
+      "flavor": null
+    },
+    {
+      "id": "twin_knives",
+      "name": "Twin Knives",
+      "slot": "weapon",
+      "rarity": "rare",
+      "price": 1600,
+      "stats": {
+        "attack": -4
+      },
+      "ability": {
+        "id": "double_strike",
+        "name": "double_strike",
+        "count": 2
+      },
+      "description": "−4 attack. Double Strike: attack 2x per turn",
+      "flavor": null
+    },
+    {
+      "id": "warcry_banner",
+      "name": "Warcry Banner",
+      "slot": "accessory",
+      "rarity": "rare",
+      "price": 750,
+      "stats": {
         "hp": 5
       },
       "ability": null,
-      "description": "+2 attack, +5 HP",
+      "description": "+5 HP",
+      "flavor": null
+    },
+    {
+      "id": "warden_shield",
+      "name": "Warden Shield",
+      "slot": "armor",
+      "rarity": "rare",
+      "price": 850,
+      "stats": {
+        "armor": 2,
+        "barrier": 15
+      },
+      "ability": {
+        "id": "capacitor",
+        "name": "capacitor",
+        "maxChargeGain": 5
+      },
+      "description": "+2 armor, +15 barrier. Capacitor: gain Charge up to 5 per trigger when Barrier is lost",
+      "flavor": null
+    },
+    {
+      "id": "ancient_sword",
+      "name": "Ancient Sword",
+      "slot": "weapon",
+      "rarity": "epic",
+      "price": 5000,
+      "stats": {
+        "attack": -9
+      },
+      "ability": {
+        "id": "heroic",
+        "name": "heroic"
+      },
+      "description": "−9 attack. Heroic: gain attack equal to damage dealt",
+      "flavor": null
+    },
+    {
+      "id": "blood_pact_ring",
+      "name": "Blood Pact Ring",
+      "slot": "accessory",
+      "rarity": "epic",
+      "price": 1400,
+      "stats": {
+        "attack": 8
+      },
+      "ability": null,
+      "description": "+8 attack",
+      "flavor": null
+    },
+    {
+      "id": "ethereal_ring",
+      "name": "Ethereal Ring",
+      "slot": "accessory",
+      "rarity": "epic",
+      "price": 5000,
+      "stats": {
+        "attack": 3
+      },
+      "ability": {
+        "id": "ethereal_barrier",
+        "name": "ethereal_barrier",
+        "blockCount": 1
+      },
+      "description": "+3 attack. Ethereal Barrier: first 1 hit fully negated",
       "flavor": null
     }
   ],
@@ -566,13 +914,41 @@
       "id": "ambush",
       "name": "Ambush",
       "description": "Deals double damage on the first attack.",
-      "params": {}
+      "params": {
+        "multiplier": 2
+      }
+    },
+    {
+      "id": "capacitor",
+      "name": "Capacitor",
+      "description": "When you lose Barrier, gain Charge equal to Barrier lost, up to N per trigger.",
+      "params": {
+        "maxChargeGain": 5
+      }
+    },
+    {
+      "id": "contagion",
+      "name": "Contagion",
+      "description": "When you are hit (HP reduced), your attacker gains N Poison.",
+      "params": {
+        "poisonPerHit": 2
+      }
+    },
+    {
+      "id": "discharge",
+      "name": "Discharge",
+      "description": "When you are hit (HP reduced), deal damagePerCharge × your Charge as damage to the attacker.",
+      "params": {
+        "damagePerCharge": 1
+      }
     },
     {
       "id": "double_strike",
       "name": "Double Strike",
       "description": "Attacks twice per turn.",
-      "params": {}
+      "params": {
+        "count": 2
+      }
     },
     {
       "id": "enrage",
@@ -586,7 +962,9 @@
       "id": "ethereal_barrier",
       "name": "Ethereal Barrier",
       "description": "The first hit taken is fully negated.",
-      "params": {}
+      "params": {
+        "blockCount": 1
+      }
     },
     {
       "id": "fiery",
@@ -598,10 +976,80 @@
       }
     },
     {
+      "id": "fortify",
+      "name": "Fortify",
+      "description": "Gain +N armor at end of each turn you were hit (HP reduced).",
+      "params": {
+        "armorGain": 1
+      }
+    },
+    {
+      "id": "frenzy",
+      "name": "Frenzy",
+      "description": "When HP first drops below 50% of max, permanently attack twice per turn.",
+      "params": {}
+    },
+    {
       "id": "heroic",
       "name": "Heroic",
       "description": "Gains attack equal to damage dealt (after armor).",
       "params": {}
+    },
+    {
+      "id": "intoxicated",
+      "name": "Intoxicated",
+      "description": "Gain +N attack while your Poison value is N or higher (threshold and bonus are both N).",
+      "params": {
+        "threshold": 3
+      }
+    },
+    {
+      "id": "last_stand",
+      "name": "Last Stand",
+      "description": "One-time — when HP first drops below 25% of max, permanently gain +N attack.",
+      "params": {
+        "attackGain": 5
+      }
+    },
+    {
+      "id": "momentum",
+      "name": "Momentum",
+      "description": "Spend N Charge to gain one additional attack this turn.",
+      "params": {
+        "chargeCost": 3
+      }
+    },
+    {
+      "id": "overload",
+      "name": "Overload",
+      "description": "When Charge reaches 10, deal N damage to enemy, skip their next counter-attack, reset Charge.",
+      "params": {
+        "damage": 10
+      }
+    },
+    {
+      "id": "pierce",
+      "name": "Pierce",
+      "description": "Ignores N armor per hit and erodes enemy Barrier N extra per hit.",
+      "params": {
+        "ignoreArmor": 2
+      }
+    },
+    {
+      "id": "predator",
+      "name": "Predator",
+      "description": "Gain +N attack while your HP is greater than the enemy's HP.",
+      "params": {
+        "attackBonus": 3
+      }
+    },
+    {
+      "id": "purge",
+      "name": "Purge",
+      "description": "Each turn end, converts up to N Poison from self into Barrier (1 Barrier per point removed). Fires before Poison tick.",
+      "params": {
+        "maxConvert": 3
+      }
     },
     {
       "id": "regeneration",
@@ -609,6 +1057,30 @@
       "description": "Heals HP at the end of each turn survived.",
       "params": {
         "healPerTurn": 3
+      }
+    },
+    {
+      "id": "siphon",
+      "name": "Siphon",
+      "description": "On hit (HP reduced), steal N Charge from enemy.",
+      "params": {
+        "chargeSteal": 2
+      }
+    },
+    {
+      "id": "sunder",
+      "name": "Sunder",
+      "description": "Each hit permanently reduces enemy armor by N.",
+      "params": {
+        "armorReduction": 1
+      }
+    },
+    {
+      "id": "supercharged",
+      "name": "Supercharged",
+      "description": "Gain +N attack while your Charge is N or higher.",
+      "params": {
+        "threshold": 5
       }
     },
     {
@@ -628,11 +1100,27 @@
       }
     },
     {
-      "id": "void",
-      "name": "Void",
-      "description": "Ignores some of the defender's armor.",
+      "id": "venom",
+      "name": "Venom",
+      "description": "Each hit applies N Poison to the enemy (bypasses armor/barrier at tick time).",
       "params": {
-        "ignoreArmor": 2
+        "poisonPerHit": 1
+      }
+    },
+    {
+      "id": "weaken",
+      "name": "Weaken",
+      "description": "Each hit permanently reduces enemy attack by N.",
+      "params": {
+        "attackReduction": 1
+      }
+    },
+    {
+      "id": "wither",
+      "name": "Wither",
+      "description": "Each hit permanently reduces enemy max HP by N (current HP also drops to match if needed).",
+      "params": {
+        "maxHpReduction": 2
       }
     }
   ],
@@ -640,33 +1128,117 @@
     {
       "name": "game",
       "section": "Progression",
-      "description": "Core minigame commands for inventory, shop, stats, boxes, and achievements.",
-      "usage": "/game <inventory|equip|unequip|shop|buy|sell|stats|leaderboard|boxes|open|achievements|optout>",
-      "details": "Use `/game inventory` to inspect your loadout, `/game shop` to browse the current stock, and `/game stats` or `/game leaderboard` to track progress.",
+      "description": "Core minigame hub for inventory, economy, boxes, and progression.",
+      "usage": "/game <subcommand>",
+      "details": "Use the `/game` group for your long-term account state: loadout, spores, purchases, boxes, and achievements.",
       "kind": "slash"
     },
     {
-      "name": "claim",
-      "section": "Wellsprings",
-      "description": "Claim an unclaimed wellspring.",
-      "usage": "/claim <location>",
-      "details": "Use this on an unclaimed wellspring. Some wellsprings are guarded and require defeating a guardian before ownership transfers.",
+      "name": "optout",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Pause your minigame participation.",
+      "usage": "/game optout",
+      "details": "Stops passive systems until you use another game command to return.",
       "kind": "slash"
     },
     {
-      "name": "challenge",
-      "section": "Wellsprings",
-      "description": "Challenge the current holder of a wellspring.",
-      "usage": "/challenge <location>",
-      "details": "Challenge a claimed wellspring to take control. Wins grant spores, losses still grant a small consolation reward, and challenge cooldowns apply.",
+      "name": "inventory",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Inspect your owned items and current loadout.",
+      "usage": "/game inventory",
+      "details": "Shows what you own and what is currently equipped.",
       "kind": "slash"
     },
     {
-      "name": "wellsprings",
-      "section": "Wellsprings",
-      "description": "List all currently active wellsprings.",
-      "usage": "/wellsprings",
-      "details": "Shows active locations, ownership state, rarity, expiry, and the next action to take at each wellspring.",
+      "name": "equip",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Equip one of your owned items.",
+      "usage": "/game equip <item>",
+      "details": "Equips a valid owned item into its matching slot.",
+      "kind": "slash"
+    },
+    {
+      "name": "unequip",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Clear one equipment slot.",
+      "usage": "/game unequip <slot>",
+      "details": "Removes your currently equipped weapon, armor, or accessory.",
+      "kind": "slash"
+    },
+    {
+      "name": "shop",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Browse the daily shop rotation.",
+      "usage": "/game shop",
+      "details": "Shows the current stock and when it refreshes.",
+      "kind": "slash"
+    },
+    {
+      "name": "buy",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Buy an item from the daily shop.",
+      "usage": "/game buy <item>",
+      "details": "Spends spores to add the selected shop item to your inventory.",
+      "kind": "slash"
+    },
+    {
+      "name": "sell",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Sell an owned item back for spores.",
+      "usage": "/game sell <item>",
+      "details": "Returns part of the item value and removes it from your inventory.",
+      "kind": "slash"
+    },
+    {
+      "name": "stats",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Check your spores and overall fight activity.",
+      "usage": "/game stats",
+      "details": "Summarizes your economy and accumulated combat participation.",
+      "kind": "slash"
+    },
+    {
+      "name": "leaderboard",
+      "parent": "game",
+      "section": "Progression",
+      "description": "View the top minigame players.",
+      "usage": "/game leaderboard",
+      "details": "Shows the strongest public standings by wins and spores.",
+      "kind": "slash"
+    },
+    {
+      "name": "boxes",
+      "parent": "game",
+      "section": "Progression",
+      "description": "See unopened boxes and chests.",
+      "usage": "/game boxes",
+      "details": "Lists your current unopened rewards.",
+      "kind": "slash"
+    },
+    {
+      "name": "open",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Open a box or chest.",
+      "usage": "/game open [id]",
+      "details": "Opens the chosen reward container, or the oldest one if no ID is supplied.",
+      "kind": "slash"
+    },
+    {
+      "name": "achievements",
+      "parent": "game",
+      "section": "Progression",
+      "description": "Review achievement progress.",
+      "usage": "/game achievements",
+      "details": "Shows unlocked milestones and what you are close to earning next.",
       "kind": "slash"
     },
     {
@@ -674,16 +1246,279 @@
       "section": "Progression",
       "description": "Claim your daily spore bonus.",
       "usage": "/daily",
-      "details": "Claim a flat daily spore payout once per day to keep your economy moving even when you are not fighting.",
+      "details": "Collect a flat spore payout once per day.",
+      "kind": "slash"
+    },
+    {
+      "name": "claim",
+      "section": "Wellsprings",
+      "description": "Claim an unclaimed wellspring.",
+      "usage": "/claim <location>",
+      "details": "Use it on open wellsprings; some are guarded and require a guardian fight first.",
+      "kind": "slash"
+    },
+    {
+      "name": "challenge",
+      "section": "Wellsprings",
+      "description": "Challenge the current holder of a wellspring.",
+      "usage": "/challenge <location>",
+      "details": "Fight for control of a held wellspring and contest its passive value.",
+      "kind": "slash"
+    },
+    {
+      "name": "wellsprings",
+      "section": "Wellsprings",
+      "description": "List every active wellspring.",
+      "usage": "/wellsprings",
+      "details": "Shows active locations, holders, rarity, expiry, and next action.",
       "kind": "slash"
     },
     {
       "name": "arena",
       "section": "Arena",
-      "description": "Arena PvP queue, profile, and leaderboard commands.",
-      "usage": "/arena <ranked|practice|leave|status|leaderboard|profile>",
-      "details": "Join ranked or practice Arena queues, inspect your queue state, and view Arena profiles or the ladder.",
+      "description": "Arena PvP hub for queueing, profiles, and ranked play.",
+      "usage": "/arena <subcommand>",
+      "details": "Use the `/arena` group to queue for matches, inspect profiles, and track ladder progress.",
       "kind": "slash"
+    },
+    {
+      "name": "ranked",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "Join the ranked Arena queue.",
+      "usage": "/arena ranked",
+      "details": "Queues you for rating-affecting arena matches.",
+      "kind": "slash"
+    },
+    {
+      "name": "practice",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "Join the practice Arena queue.",
+      "usage": "/arena practice",
+      "details": "Queues you for lower-stakes practice fights.",
+      "kind": "slash"
+    },
+    {
+      "name": "leave",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "Leave your current Arena queue.",
+      "usage": "/arena leave",
+      "details": "Removes you from the queue if you have not been matched yet.",
+      "kind": "slash"
+    },
+    {
+      "name": "status",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "Check your Arena queue or profile status.",
+      "usage": "/arena status",
+      "details": "Shows whether you are queued and summarizes your current arena state.",
+      "kind": "slash"
+    },
+    {
+      "name": "leaderboard",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "View the ranked Arena ladder.",
+      "usage": "/arena leaderboard",
+      "details": "Displays the top competitive Arena standings.",
+      "kind": "slash"
+    },
+    {
+      "name": "profile",
+      "parent": "arena",
+      "section": "Arena",
+      "description": "Inspect an Arena profile.",
+      "usage": "/arena profile [user]",
+      "details": "Shows your own arena record or another player’s profile.",
+      "kind": "slash"
+    }
+  ],
+  "wellsprings": [
+    {
+      "id": "verdant",
+      "label": "Verdant",
+      "description": "Both fighters gain +10 HP",
+      "rarity": "common",
+      "sporesPerHour": 20,
+      "modifiers": {
+        "hp": 10
+      },
+      "grantAbilities": [],
+      "guardian": null,
+      "guardianHint": null
+    },
+    {
+      "id": "hollow",
+      "label": "Hollow",
+      "description": "Both fighters start with −10 HP",
+      "rarity": "common",
+      "sporesPerHour": 20,
+      "modifiers": {
+        "hp": -10
+      },
+      "grantAbilities": [],
+      "guardian": null,
+      "guardianHint": null
+    },
+    {
+      "id": "fevered",
+      "label": "Fevered",
+      "description": "Both fighters gain +2 attack",
+      "rarity": "common",
+      "sporesPerHour": 20,
+      "modifiers": {
+        "attack": 2
+      },
+      "grantAbilities": [],
+      "guardian": null,
+      "guardianHint": null
+    },
+    {
+      "id": "still",
+      "label": "Still",
+      "description": "Both fighters gain +2 armor",
+      "rarity": "common",
+      "sporesPerHour": 20,
+      "modifiers": {
+        "armor": 2
+      },
+      "grantAbilities": [],
+      "guardian": null,
+      "guardianHint": null
+    },
+    {
+      "id": "ashen",
+      "label": "Ashen",
+      "description": "Both fighters: −2 attack, +3 armor",
+      "rarity": "common",
+      "sporesPerHour": 20,
+      "modifiers": {
+        "attack": -2,
+        "armor": 3
+      },
+      "grantAbilities": [],
+      "guardian": null,
+      "guardianHint": null
+    },
+    {
+      "id": "burning_surge",
+      "label": "Burning Surge",
+      "description": "Intense heat fills the air. Fighters grow stronger each turn, but vitality drains away.",
+      "rarity": "uncommon",
+      "sporesPerHour": 30,
+      "modifiers": {
+        "attack": 4
+      },
+      "grantAbilities": [
+        {
+          "name": "fiery",
+          "attackGain": 2,
+          "hpCost": 2
+        }
+      ],
+      "guardian": {
+        "hp": 80,
+        "attack": 8,
+        "armor": 0,
+        "abilities": [
+          "vampirism"
+        ]
+      },
+      "guardianHint": "The Guardian heals from the damage it deals. Armor cuts its sustain — don't let the fight drag on."
+    },
+    {
+      "id": "hollow_echo",
+      "label": "Hollow Echo",
+      "description": "An eerie void saps both fighters. The Guardian endures what others cannot.",
+      "rarity": "uncommon",
+      "sporesPerHour": 30,
+      "modifiers": {
+        "hp": -8
+      },
+      "grantAbilities": [],
+      "guardian": {
+        "hp": 80,
+        "attack": 8,
+        "armor": 0,
+        "abilities": [
+          "ethereal_barrier",
+          "thorn"
+        ]
+      },
+      "guardianHint": "Your first strike will be absorbed. After that, every hit you land comes back to sting you. Burst it down or bring regeneration."
+    },
+    {
+      "id": "still_waters",
+      "label": "Still Waters",
+      "description": "The air thickens. Both fighters move slowly behind heavy defenses.",
+      "rarity": "uncommon",
+      "sporesPerHour": 30,
+      "modifiers": {
+        "armor": 4
+      },
+      "grantAbilities": [],
+      "guardian": {
+        "hp": 80,
+        "attack": 8,
+        "armor": 2,
+        "abilities": [
+          "double_strike",
+          "pierce"
+        ]
+      },
+      "guardianHint": "The Guardian punches through armor and hits twice. Armor won't save you here — bring attack power or Void."
+    },
+    {
+      "id": "smoldering_depths",
+      "label": "Smoldering Depths",
+      "description": "Scorching flames engulf both fighters. Only those built to endure will survive this heat.",
+      "rarity": "rare",
+      "sporesPerHour": 50,
+      "modifiers": {
+        "attack": 6,
+        "hp": -10
+      },
+      "grantAbilities": [
+        {
+          "name": "fiery",
+          "attackGain": 2,
+          "hpCost": 2
+        }
+      ],
+      "guardian": {
+        "hp": 80,
+        "attack": 15,
+        "armor": 2,
+        "abilities": [
+          "vampirism"
+        ]
+      },
+      "guardianHint": "The Guardian heals from every blow you land. Armor won't save you — bring your own vampirism or thorn to outrace its sustain."
+    },
+    {
+      "id": "corrupted_nexus",
+      "label": "Corrupted Nexus",
+      "description": "Dark energy warps the battlefield. The Guardian shrugs off your first blow, then grows stronger with each exchange.",
+      "rarity": "rare",
+      "sporesPerHour": 50,
+      "modifiers": {
+        "attack": 3,
+        "armor": 2
+      },
+      "grantAbilities": [],
+      "guardian": {
+        "hp": 100,
+        "attack": 14,
+        "armor": 0,
+        "abilities": [
+          "ethereal_barrier",
+          "enrage"
+        ]
+      },
+      "guardianHint": "Your opening strike is absorbed. After that, every hit you land makes it stronger. Match its escalation — Orc Shield is the key."
     }
   ]
 }

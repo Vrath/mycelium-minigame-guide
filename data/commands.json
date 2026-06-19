@@ -2,33 +2,117 @@
   {
     "name": "game",
     "section": "Progression",
-    "description": "Core minigame commands for inventory, shop, stats, boxes, and achievements.",
-    "usage": "/game <inventory|equip|unequip|shop|buy|sell|stats|leaderboard|boxes|open|achievements|optout>",
-    "details": "Use `/game inventory` to inspect your loadout, `/game shop` to browse the current stock, and `/game stats` or `/game leaderboard` to track progress.",
+    "description": "Core minigame hub for inventory, economy, boxes, and progression.",
+    "usage": "/game <subcommand>",
+    "details": "Use the `/game` group for your long-term account state: loadout, spores, purchases, boxes, and achievements.",
     "kind": "slash"
   },
   {
-    "name": "claim",
-    "section": "Wellsprings",
-    "description": "Claim an unclaimed wellspring.",
-    "usage": "/claim <location>",
-    "details": "Use this on an unclaimed wellspring. Some wellsprings are guarded and require defeating a guardian before ownership transfers.",
+    "name": "optout",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Pause your minigame participation.",
+    "usage": "/game optout",
+    "details": "Stops passive systems until you use another game command to return.",
     "kind": "slash"
   },
   {
-    "name": "challenge",
-    "section": "Wellsprings",
-    "description": "Challenge the current holder of a wellspring.",
-    "usage": "/challenge <location>",
-    "details": "Challenge a claimed wellspring to take control. Wins grant spores, losses still grant a small consolation reward, and challenge cooldowns apply.",
+    "name": "inventory",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Inspect your owned items and current loadout.",
+    "usage": "/game inventory",
+    "details": "Shows what you own and what is currently equipped.",
     "kind": "slash"
   },
   {
-    "name": "wellsprings",
-    "section": "Wellsprings",
-    "description": "List all currently active wellsprings.",
-    "usage": "/wellsprings",
-    "details": "Shows active locations, ownership state, rarity, expiry, and the next action to take at each wellspring.",
+    "name": "equip",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Equip one of your owned items.",
+    "usage": "/game equip <item>",
+    "details": "Equips a valid owned item into its matching slot.",
+    "kind": "slash"
+  },
+  {
+    "name": "unequip",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Clear one equipment slot.",
+    "usage": "/game unequip <slot>",
+    "details": "Removes your currently equipped weapon, armor, or accessory.",
+    "kind": "slash"
+  },
+  {
+    "name": "shop",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Browse the daily shop rotation.",
+    "usage": "/game shop",
+    "details": "Shows the current stock and when it refreshes.",
+    "kind": "slash"
+  },
+  {
+    "name": "buy",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Buy an item from the daily shop.",
+    "usage": "/game buy <item>",
+    "details": "Spends spores to add the selected shop item to your inventory.",
+    "kind": "slash"
+  },
+  {
+    "name": "sell",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Sell an owned item back for spores.",
+    "usage": "/game sell <item>",
+    "details": "Returns part of the item value and removes it from your inventory.",
+    "kind": "slash"
+  },
+  {
+    "name": "stats",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Check your spores and overall fight activity.",
+    "usage": "/game stats",
+    "details": "Summarizes your economy and accumulated combat participation.",
+    "kind": "slash"
+  },
+  {
+    "name": "leaderboard",
+    "parent": "game",
+    "section": "Progression",
+    "description": "View the top minigame players.",
+    "usage": "/game leaderboard",
+    "details": "Shows the strongest public standings by wins and spores.",
+    "kind": "slash"
+  },
+  {
+    "name": "boxes",
+    "parent": "game",
+    "section": "Progression",
+    "description": "See unopened boxes and chests.",
+    "usage": "/game boxes",
+    "details": "Lists your current unopened rewards.",
+    "kind": "slash"
+  },
+  {
+    "name": "open",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Open a box or chest.",
+    "usage": "/game open [id]",
+    "details": "Opens the chosen reward container, or the oldest one if no ID is supplied.",
+    "kind": "slash"
+  },
+  {
+    "name": "achievements",
+    "parent": "game",
+    "section": "Progression",
+    "description": "Review achievement progress.",
+    "usage": "/game achievements",
+    "details": "Shows unlocked milestones and what you are close to earning next.",
     "kind": "slash"
   },
   {
@@ -36,15 +120,93 @@
     "section": "Progression",
     "description": "Claim your daily spore bonus.",
     "usage": "/daily",
-    "details": "Claim a flat daily spore payout once per day to keep your economy moving even when you are not fighting.",
+    "details": "Collect a flat spore payout once per day.",
+    "kind": "slash"
+  },
+  {
+    "name": "claim",
+    "section": "Wellsprings",
+    "description": "Claim an unclaimed wellspring.",
+    "usage": "/claim <location>",
+    "details": "Use it on open wellsprings; some are guarded and require a guardian fight first.",
+    "kind": "slash"
+  },
+  {
+    "name": "challenge",
+    "section": "Wellsprings",
+    "description": "Challenge the current holder of a wellspring.",
+    "usage": "/challenge <location>",
+    "details": "Fight for control of a held wellspring and contest its passive value.",
+    "kind": "slash"
+  },
+  {
+    "name": "wellsprings",
+    "section": "Wellsprings",
+    "description": "List every active wellspring.",
+    "usage": "/wellsprings",
+    "details": "Shows active locations, holders, rarity, expiry, and next action.",
     "kind": "slash"
   },
   {
     "name": "arena",
     "section": "Arena",
-    "description": "Arena PvP queue, profile, and leaderboard commands.",
-    "usage": "/arena <ranked|practice|leave|status|leaderboard|profile>",
-    "details": "Join ranked or practice Arena queues, inspect your queue state, and view Arena profiles or the ladder.",
+    "description": "Arena PvP hub for queueing, profiles, and ranked play.",
+    "usage": "/arena <subcommand>",
+    "details": "Use the `/arena` group to queue for matches, inspect profiles, and track ladder progress.",
+    "kind": "slash"
+  },
+  {
+    "name": "ranked",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "Join the ranked Arena queue.",
+    "usage": "/arena ranked",
+    "details": "Queues you for rating-affecting arena matches.",
+    "kind": "slash"
+  },
+  {
+    "name": "practice",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "Join the practice Arena queue.",
+    "usage": "/arena practice",
+    "details": "Queues you for lower-stakes practice fights.",
+    "kind": "slash"
+  },
+  {
+    "name": "leave",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "Leave your current Arena queue.",
+    "usage": "/arena leave",
+    "details": "Removes you from the queue if you have not been matched yet.",
+    "kind": "slash"
+  },
+  {
+    "name": "status",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "Check your Arena queue or profile status.",
+    "usage": "/arena status",
+    "details": "Shows whether you are queued and summarizes your current arena state.",
+    "kind": "slash"
+  },
+  {
+    "name": "leaderboard",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "View the ranked Arena ladder.",
+    "usage": "/arena leaderboard",
+    "details": "Displays the top competitive Arena standings.",
+    "kind": "slash"
+  },
+  {
+    "name": "profile",
+    "parent": "arena",
+    "section": "Arena",
+    "description": "Inspect an Arena profile.",
+    "usage": "/arena profile [user]",
+    "details": "Shows your own arena record or another player’s profile.",
     "kind": "slash"
   }
 ]

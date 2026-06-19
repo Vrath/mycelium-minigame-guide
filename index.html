@@ -7,70 +7,115 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main>
-      <header class="hero">
-        <p class="eyebrow">Read-only companion</p>
-        <h1>Minigame Codex</h1>
-        <p class="hero-copy">A field manual for spores, wellsprings, and arena builds. Each page element is generated from the same repository data that powers the minigame, so balance changes and command docs stay in lockstep with the actual game.</p>
-        <div class="hero-ribbon">
-          <span>Arcane field notes</span>
-          <span>Live command reference</span>
-          <span>Generated from game data</span>
-        </div>
-        <div id="status-panel" class="status-panel">Loading codex data...</div>
-        <nav>
-          <a href="#field-guide">Field Guide</a>
-          <a href="#commands">Command Guide</a>
-          <a href="#items">Item Codex</a>
-        </nav>
-      </header>
+    <header class="hero">
+      <p class="eyebrow">Read-only companion</p>
+      <h1>Minigame Codex</h1>
+      <p class="hero-copy">A living field manual for spores, wellsprings, and arena builds — generated directly from the same data that runs the game.</p>
+      <div id="status-panel" class="status-panel">Loading codex data…</div>
+      <nav class="tab-bar" role="tablist">
+        <button role="tab" class="tab-btn active" data-tab="quickstart">Quick Start</button>
+        <button role="tab" class="tab-btn" data-tab="items">Items</button>
+        <button role="tab" class="tab-btn" data-tab="archetypes">Archetypes</button>
+        <button role="tab" class="tab-btn" data-tab="commands">Commands</button>
+        <button role="tab" class="tab-btn" data-tab="wellsprings">Wellsprings</button>
+      </nav>
+    </header>
 
-      <section id="field-guide" class="intro-grid">
-        <article class="card prose">
-          <p class="section-label">Field Guide</p>
-          <h2>First steps</h2>
-          <p>Pick a starter kit, claim your daily spores, then start buying around your planned build instead of treating every item as a flat stat stick.</p>
-        </article>
-        <article class="card prose">
-          <p class="section-label">Wellsprings</p>
-          <h2>Control the map</h2>
-          <p>Use open wellsprings for passive value and claimed wellsprings as pressure points. Guardian fights and cooldowns mean timing matters as much as raw gear.</p>
-        </article>
-        <article class="card prose">
-          <p class="section-label">Arena</p>
-          <h2>Test builds safely</h2>
-          <p>Arena queues are the cleanest place to test whether a loadout really works before you commit it to contested wellsprings.</p>
-        </article>
+    <main>
+      <!-- ───── Quick Start ───── -->
+      <section id="tab-quickstart" class="tab-panel active">
+        <div class="intro-grid">
+          <article class="card prose">
+            <p class="section-label">Step 1</p>
+            <h2>First steps</h2>
+            <p>Use <code>/game shop</code> to browse available items and <code>/game buy</code> to purchase one. Then equip it with <code>/game equip</code>. Your first 200 spores go furthest on a common weapon that matches your preferred fight style.</p>
+          </article>
+          <article class="card prose">
+            <p class="section-label">Step 2</p>
+            <h2>Spore economy</h2>
+            <p>Claim wellsprings for passive income — common ones pay 20 spores/hr, rare ones up to 50. Stack that with your daily <code>/daily</code> bonus and chat XP ticks. Sell items you don't need: you get partial value back.</p>
+          </article>
+          <article class="card prose">
+            <p class="section-label">Step 3</p>
+            <h2>Build around a plan</h2>
+            <p>Don't treat every item as a flat stat stick. Pick a strategy (see Archetypes) and buy toward it. A coherent loadout with three synergising items will beat three random high-stat pieces almost every time.</p>
+          </article>
+          <article class="card prose">
+            <p class="section-label">Step 4</p>
+            <h2>Wellspring timing</h2>
+            <p>Guardians protect unclaimed uncommon and rare wellsprings — fight them to claim the location. Once claimed you can lose it to any challenger. Check <code>/wellsprings</code> for expiry times and contest the most valuable ones before they lapse.</p>
+          </article>
+          <article class="card prose">
+            <p class="section-label">Step 5</p>
+            <h2>Test in the Arena</h2>
+            <p>Arena queues are the cleanest way to stress-test a loadout without risking wellspring control. Use <code>/arena practice</code> for no-stakes fights, then <code>/arena ranked</code> once you're confident. Check the Items tab to simulate your combined stats before queuing.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="commands">
+      <!-- ───── Items ───── -->
+      <section id="tab-items" class="tab-panel">
+        <div id="filter-bar" class="filter-bar"></div>
+        <div id="loadout-tester" class="loadout-tester">
+          <div class="loadout-header">
+            <span class="section-label">Loadout Tester</span>
+            <button id="loadout-clear" class="clear-btn">Clear all</button>
+          </div>
+          <div class="loadout-selects">
+            <label class="loadout-slot">
+              <span class="slot-label">⚔️ Weapon</span>
+              <select id="slot-weapon" class="slot-select"><option value="">— None —</option></select>
+            </label>
+            <label class="loadout-slot">
+              <span class="slot-label">🛡️ Armor</span>
+              <select id="slot-armor" class="slot-select"><option value="">— None —</option></select>
+            </label>
+            <label class="loadout-slot">
+              <span class="slot-label">💍 Accessory</span>
+              <select id="slot-accessory" class="slot-select"><option value="">— None —</option></select>
+            </label>
+          </div>
+          <div id="loadout-stats" class="loadout-stats"></div>
+          <div id="loadout-abilities" class="loadout-abilities"></div>
+        </div>
+        <div id="item-summary" class="summary-strip"></div>
+        <div id="items-grid" class="grid"></div>
+      </section>
+
+      <!-- ───── Archetypes ───── -->
+      <section id="tab-archetypes" class="tab-panel">
         <div class="section-heading">
           <div>
-            <p class="section-label">Operations</p>
+            <p class="section-label">Strategies</p>
+            <h2>Archetypes &amp; Builds</h2>
+          </div>
+          <p class="meta">Five starting points — mix, invert, or combine them. The best builds are often the ones nobody expected.</p>
+        </div>
+        <div id="archetypes-grid" class="archetypes-grid"></div>
+      </section>
+
+      <!-- ───── Commands ───── -->
+      <section id="tab-commands" class="tab-panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Reference</p>
             <h2>Command Guide</h2>
           </div>
-          <p class="meta">Every relevant subcommand is listed with a one-line explanation so you can scan the full ruleset without checking Discord command help.</p>
+          <p class="meta">Every slash command with its subcommands. Scan the full ruleset without opening Discord.</p>
         </div>
         <div id="commands-grid" class="command-groups"></div>
       </section>
 
-      <section id="items">
+      <!-- ───── Wellsprings ───── -->
+      <section id="tab-wellsprings" class="tab-panel">
         <div class="section-heading">
           <div>
-            <p class="section-label">Equipment</p>
-            <h2>Item Codex</h2>
+            <p class="section-label">Locations</p>
+            <h2>Wellspring Types</h2>
           </div>
-          <p id="items-meta" class="meta"></p>
+          <p class="meta">Each wellspring type modifies combat conditions and may guard itself with a boss. Know the field before you fight on it.</p>
         </div>
-        <div id="item-summary" class="summary-strip"></div>
-        <div id="items-grid" class="grid"></div>
-        <template id="item-card-template">
-          <article class="card item-card">
-            <div class="card-header"></div>
-            <div class="pill-row"></div>
-            <footer class="item-card-footer"></footer>
-          </article>
-        </template>
+        <div id="wellsprings-grid"></div>
       </section>
     </main>
 

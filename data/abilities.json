@@ -3,13 +3,41 @@
     "id": "ambush",
     "name": "Ambush",
     "description": "Deals double damage on the first attack.",
-    "params": {}
+    "params": {
+      "multiplier": 2
+    }
+  },
+  {
+    "id": "capacitor",
+    "name": "Capacitor",
+    "description": "When you lose Barrier, gain Charge equal to Barrier lost, up to N per trigger.",
+    "params": {
+      "maxChargeGain": 5
+    }
+  },
+  {
+    "id": "contagion",
+    "name": "Contagion",
+    "description": "When you are hit (HP reduced), your attacker gains N Poison.",
+    "params": {
+      "poisonPerHit": 2
+    }
+  },
+  {
+    "id": "discharge",
+    "name": "Discharge",
+    "description": "When you are hit (HP reduced), deal damagePerCharge × your Charge as damage to the attacker.",
+    "params": {
+      "damagePerCharge": 1
+    }
   },
   {
     "id": "double_strike",
     "name": "Double Strike",
     "description": "Attacks twice per turn.",
-    "params": {}
+    "params": {
+      "count": 2
+    }
   },
   {
     "id": "enrage",
@@ -23,7 +51,9 @@
     "id": "ethereal_barrier",
     "name": "Ethereal Barrier",
     "description": "The first hit taken is fully negated.",
-    "params": {}
+    "params": {
+      "blockCount": 1
+    }
   },
   {
     "id": "fiery",
@@ -35,10 +65,80 @@
     }
   },
   {
+    "id": "fortify",
+    "name": "Fortify",
+    "description": "Gain +N armor at end of each turn you were hit (HP reduced).",
+    "params": {
+      "armorGain": 1
+    }
+  },
+  {
+    "id": "frenzy",
+    "name": "Frenzy",
+    "description": "When HP first drops below 50% of max, permanently attack twice per turn.",
+    "params": {}
+  },
+  {
     "id": "heroic",
     "name": "Heroic",
     "description": "Gains attack equal to damage dealt (after armor).",
     "params": {}
+  },
+  {
+    "id": "intoxicated",
+    "name": "Intoxicated",
+    "description": "Gain +N attack while your Poison value is N or higher (threshold and bonus are both N).",
+    "params": {
+      "threshold": 3
+    }
+  },
+  {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "description": "One-time — when HP first drops below 25% of max, permanently gain +N attack.",
+    "params": {
+      "attackGain": 5
+    }
+  },
+  {
+    "id": "momentum",
+    "name": "Momentum",
+    "description": "Spend N Charge to gain one additional attack this turn.",
+    "params": {
+      "chargeCost": 3
+    }
+  },
+  {
+    "id": "overload",
+    "name": "Overload",
+    "description": "When Charge reaches 10, deal N damage to enemy, skip their next counter-attack, reset Charge.",
+    "params": {
+      "damage": 10
+    }
+  },
+  {
+    "id": "pierce",
+    "name": "Pierce",
+    "description": "Ignores N armor per hit and erodes enemy Barrier N extra per hit.",
+    "params": {
+      "ignoreArmor": 2
+    }
+  },
+  {
+    "id": "predator",
+    "name": "Predator",
+    "description": "Gain +N attack while your HP is greater than the enemy's HP.",
+    "params": {
+      "attackBonus": 3
+    }
+  },
+  {
+    "id": "purge",
+    "name": "Purge",
+    "description": "Each turn end, converts up to N Poison from self into Barrier (1 Barrier per point removed). Fires before Poison tick.",
+    "params": {
+      "maxConvert": 3
+    }
   },
   {
     "id": "regeneration",
@@ -46,6 +146,30 @@
     "description": "Heals HP at the end of each turn survived.",
     "params": {
       "healPerTurn": 3
+    }
+  },
+  {
+    "id": "siphon",
+    "name": "Siphon",
+    "description": "On hit (HP reduced), steal N Charge from enemy.",
+    "params": {
+      "chargeSteal": 2
+    }
+  },
+  {
+    "id": "sunder",
+    "name": "Sunder",
+    "description": "Each hit permanently reduces enemy armor by N.",
+    "params": {
+      "armorReduction": 1
+    }
+  },
+  {
+    "id": "supercharged",
+    "name": "Supercharged",
+    "description": "Gain +N attack while your Charge is N or higher.",
+    "params": {
+      "threshold": 5
     }
   },
   {
@@ -65,11 +189,27 @@
     }
   },
   {
-    "id": "void",
-    "name": "Void",
-    "description": "Ignores some of the defender's armor.",
+    "id": "venom",
+    "name": "Venom",
+    "description": "Each hit applies N Poison to the enemy (bypasses armor/barrier at tick time).",
     "params": {
-      "ignoreArmor": 2
+      "poisonPerHit": 1
+    }
+  },
+  {
+    "id": "weaken",
+    "name": "Weaken",
+    "description": "Each hit permanently reduces enemy attack by N.",
+    "params": {
+      "attackReduction": 1
+    }
+  },
+  {
+    "id": "wither",
+    "name": "Wither",
+    "description": "Each hit permanently reduces enemy max HP by N (current HP also drops to match if needed).",
+    "params": {
+      "maxHpReduction": 2
     }
   }
 ]
